@@ -1,0 +1,27 @@
+* {
+    font-family: 'Roboto', sans-serif;
+  }
+
+.products_body {
+  background-color: ghostwhite;
+}
+
+.productContainer {
+display: inline-flex;
+background-color: ghostwhite;
+max-width: 20%;
+  width: max-content;
+
+}
+
+
+.productCardContainer:hover {
+
+    opacity: 0.5;
+    animation: 3s linear;
+
+
+}
+ 
+
+
