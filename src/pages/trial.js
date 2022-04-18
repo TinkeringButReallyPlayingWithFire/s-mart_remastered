@@ -28,7 +28,7 @@ const trial = () => {
         data-item-name="Bacon"
         data-item-price="3.00"
         data-item-weight="20"
-        data-item-url="http://localhost:8000/trial"
+        data-item-url="https://smartremasteredmaster.gatsbyjs.io/trial/"
         data-item-description="Some fresh bacon"
       >
         Buy bacon

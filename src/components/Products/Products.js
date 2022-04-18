@@ -126,7 +126,7 @@ function Products() {
         data-item-name="Bacon"
         data-item-price="3.00"
         data-item-weight="20"
-        data-item-url="http://localhost:8000/"
+        data-item-url="/"
         data-item-description="Some fresh bacon"
       >
         Buy bacon
