@@ -20,6 +20,7 @@
     "bulma": "^0.9.3",
     "bulma-carousel": "^4.0.24",
     "gatsby": "^4.12.1",
+    "gatsby-plugin-algolia": "^0.26.0",
     "gatsby-plugin-image": "^2.12.1",
     "gatsby-plugin-mdx": "^3.12.1",
     "gatsby-plugin-react-helmet": "^5.12.1",

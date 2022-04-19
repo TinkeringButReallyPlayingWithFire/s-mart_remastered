@@ -7,6 +7,7 @@ import ProductListingCard from "./ProductListingCard";
 import ProductPreloader from "./ProductPreloader";
 import { StaticImage } from "gatsby-plugin-image";
 import { Helmet } from "react-helmet";
+import NavigationSearchbox from "../Navigation/Navigation_Searchbox";
 
 <Helmet>
   <link
@@ -31,6 +32,8 @@ function OnProductClick(e) {
 }
 
 function Products() {
+
+
   // const [productClicked, setProductClicked] = useState(false);
 
   //START OF INSERTED CODE
@@ -66,7 +69,7 @@ function Products() {
     eachProductStored.push(data[product]);
   }
 
-  console.log(eachProductStored);
+  console.log("EACH PRODUK STORE ARRAY AK", eachProductStored);
   function RenderProducts() {
     return eachProductStored.map((products, index) => {
       return (
@@ -91,10 +94,6 @@ function Products() {
                   </figure>
                 </div>
 
-                <a href="#" class="snipcart-checkout">
-                  Click here to checkout
-                </a>
-
                 <div class="media-content">
                   <p class="title is-4">{products.title}</p>
                 </div>
@@ -105,13 +104,30 @@ function Products() {
                 <a href="#">#css</a> <a href="#">#responsive</a>
                 <br />
               </div>
+              <div>
+                <button
+                  class="snipcart-add-item"
+                  data-item-id={products.id}
+                  data-item-name={products.title}
+                  data-item-image={products.image}
+                  data-item-price={products.price}
+                  data-item-url="https://smartremasteredmaster.gatsbyjs.io/"
+                  data-item-description={products.description}
+                >
+                  Add to shopping cart
+                </button>
+              </div>
             </div>
           </div>
+          <NavigationSearchbox props={products} />
           <div>
             {clickedIndex[index] ? (
               <ProductListingCard props={products} />
             ) : null}
           </div>
+          <a href="#" class="snipcart-checkout">
+            Click here to checkout
+          </a>
         </div>
       );
     });
@@ -119,18 +135,6 @@ function Products() {
 
   return (
     <React.Fragment>
-      <button
-        type="button"
-        class="snipcart-add-item"
-        data-item-id="2"
-        data-item-name="Bacon"
-        data-item-price="3.00"
-        data-item-weight="20"
-        data-item-url="/"
-        data-item-description="Some fresh bacon"
-      >
-        Buy bacon
-      </button>
       <RenderProducts />
       {isLoading ? <ProductPreloader /> : null}
     </React.Fragment>

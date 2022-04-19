@@ -1,24 +1,25 @@
 import * as React from "react";
-import "bulma/css/bulma.css";
-import "./Navigation.module.css";
-import "materialize-css/dist/css/materialize.min.css";
+import { useState, useEffect } from "react";
 
-function NavigationSearchbox() {
+import "bulma/css/bulma.css";
+import { searchbox } from "./Navigation.module.css";
+
+function NavigationSearchbox(props) {
   return (
-    <div>
-      <nav>
-        <div class="nav-wrapper">
-          <form>
-            <div class="input-field">
-              <input id="search" type="search" required />
-              <label class="label-icon" for="search">
-                <i class="material-icons">search</i>
-              </label>
-              <i class="material-icons">close</i>
-            </div>
-          </form>
+    <div className={searchbox}>
+      <div class="field has-addons">
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            id="myInput"
+            placeholder="Search for a product"
+          />
         </div>
-      </nav>
+        <div class="control">
+          <a class="button is-info">Search</a>
+        </div>
+      </div>
     </div>
   );
 }

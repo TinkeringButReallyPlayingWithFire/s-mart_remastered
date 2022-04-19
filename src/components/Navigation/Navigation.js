@@ -51,6 +51,9 @@ const Navigation = () => {
               </div>
             </div>
           </div>
+          <div>
+            <NavigationSearchbox />
+          </div>
 
           <div className="navbar-end">
             <div className="navbar-item">

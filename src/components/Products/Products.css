@@ -9,6 +9,7 @@
 .productContainer {
 display: inline-flex;
 background-color: ghostwhite;
+margin: 2%;
 max-width: 20%;
   width: max-content;
 
