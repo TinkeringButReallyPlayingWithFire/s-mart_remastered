@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-smartremastered-dev-164937-authRole",
+      "UnauthRoleArn": "arn:aws:iam::453551969482:role/amplify-smartremastered-dev-164937-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::453551969482:role/amplify-smartremastered-dev-164937-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-smartremastered-dev-164937-deployment",
+      "UnauthRoleName": "amplify-smartremastered-dev-164937-unauthRole",
+      "StackName": "amplify-smartremastered-dev-164937",
+      "StackId": "arn:aws:cloudformation:eu-west-2:453551969482:stack/amplify-smartremastered-dev-164937/7d80b1d0-c0c1-11ec-807e-0677d1af0a70",
+      "AmplifyAppId": "d3gm4gnkdk5jql"
+    },
+    "categories": {
+      "auth": {
+        "smartremastered6a7e731b": {}
+      }
+    }
+  }
+}

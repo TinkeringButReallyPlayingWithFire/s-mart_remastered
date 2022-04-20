@@ -1,18 +1,26 @@
-import React from "react";
-import { SignIn, SignOut } from "gatsby-theme-amplify-cognito";
+// import React from "react";
+// import Homepage from "../components/Profile/Profile";
+// import { body } from "./index.module.css";
 
-const Homepage = ({ authState, authData }) => {
+// // markup
+// const ProfilePage = () => {
+//   return (
+//     <div className={body}>
+//       <Homepage />
+//     </div>
+//   );
+// };
+
+// export default ProfilePage;
+import { withAuthenticator } from "aws-amplify-react";
+
+// markup
+const IndexPage = () => {
   return (
-    <section>
-      {authState !== "signedIn" ? (
-        <SignIn authState={authState} />
-      ) : (
-        <>
-          <h1>Hello {authData.username}</h1>
-          <SignOut />
-        </>
-      )}
-    </section>
+    <div>
+      <h1>WOWOWOWOOWOWOWOW</h1>
+    </div>
   );
 };
-export default Homepage;
+
+export default withAuthenticator(IndexPage);

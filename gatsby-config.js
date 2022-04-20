@@ -71,14 +71,6 @@ module.exports = {
     },
     `gatsby-plugin-styled-components`,
     {
-      resolve: `gatsby-theme-amplify-cognito`,
-      options: {
-        region: "eu-west",
-        userPoolId: "eu-west-2_ZTj1iTbNE",
-        userPoolWebClientId: "6e3irklsg1o9t4p4dpta9f2d05",
-      },
-    },
-    {
       // This plugin must be placed last in your list of plugins to ensure that it can query all the GraphQL data
       resolve: `gatsby-plugin-algolia`,
       options: {
