@@ -26,4 +26,4 @@ const awsmobile = {
 export default awsmobile;
 
 const React = require("react");
-Amplify.configure(awsConfig);
+Amplify.configure(awsmobile);
