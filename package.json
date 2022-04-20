@@ -17,6 +17,8 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "@styled-icons/fa-solid": "^10.34.0",
+    "algoliasearch": "^4.13.0",
     "bulma": "^0.9.3",
     "bulma-carousel": "^4.0.24",
     "gatsby": "^4.12.1",
@@ -26,13 +28,19 @@
     "gatsby-plugin-react-helmet": "^5.12.1",
     "gatsby-plugin-sharp": "^4.12.1",
     "gatsby-plugin-snipcartv3": "^2.3.3",
+    "gatsby-plugin-styled-components": "^5.12.1",
     "gatsby-source-filesystem": "^4.12.1",
+    "gatsby-theme-amplify-cognito": "^3.0.0",
+    "gatsby-transformer-json": "^4.12.1",
     "gatsby-transformer-sharp": "^4.12.1",
     "materialize-css": "^1.0.0-rc.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
+    "react-instantsearch-dom": "^6.23.3",
+    "react-instantsearch-hooks": "^6.23.3",
     "react-slick": "^0.29.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.3.5"
   }
 }

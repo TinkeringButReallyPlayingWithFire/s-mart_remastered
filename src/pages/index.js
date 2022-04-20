@@ -1,15 +1,23 @@
-import * as React from "react";
+import React from "react";
 import Footer from "../components/Footer/Footer";
 import HeroCarousel from "../components/HeroCarousel/HeroCarousel";
 import Navigation from "../components/Navigation/Navigation";
 import Products from "../components/Products/Products";
+import Search from "../components/Searchbox/SearchBox";
 import { body } from "./index.module.css";
-// markup
 
+const searchIndices = [{ name: `Pages`, title: `Pages` }];
+// const searchClient = algoliasearch(
+//   "O14HNP4P9H",
+//   "7617e09e15be831dd191ddbd587186f6"
+// );
+
+// markup
 const IndexPage = () => {
   return (
     <div className={body}>
       <Navigation />
+      <Search indices={searchIndices} />
       <HeroCarousel />
       <Products />
       <Footer />

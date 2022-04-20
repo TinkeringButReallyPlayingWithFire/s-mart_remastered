@@ -1,8 +1,10 @@
 import * as React from "react";
+import { useState } from "react";
 import "bulma/css/bulma.css";
 import { container, navbarColours } from "./Navigation.module.css";
 import { StaticImage } from "gatsby-plugin-image";
-import NavigationSearchbox from "./Navigation_Searchbox";
+import NavigationProfileIcon from "./NavigationProfileIcon";
+import { Link } from "gatsby";
 
 const Navigation = () => {
   return (
@@ -27,9 +29,9 @@ const Navigation = () => {
             aria-expanded="false"
             data-target="navbarBasicExample"
           >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
+            <span aria-hidden="true" />
+            <span aria-hidden="true" />
+            <span aria-hidden="true" />
           </a>
         </div>
 
@@ -51,17 +53,13 @@ const Navigation = () => {
               </div>
             </div>
           </div>
-          <div>
-            <NavigationSearchbox />
-          </div>
-
+          <div>{/* <NavigationProfileIcon /> */}</div>
           <div className="navbar-end">
             <div className="navbar-item">
               <div className="buttons">
-                <a className="button is-primary">
-                  <strong>Sign up</strong>
-                </a>
-                <a className="button is-light">Log in</a>
+                <Link to="/Profile" className="button is-primary">
+                  <strong>Login</strong>
+                </Link>
               </div>
             </div>
           </div>

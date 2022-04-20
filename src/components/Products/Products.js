@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { useState, useEffect } from "react";
 import "bulma/css/bulma.css";
 import "materialize-css/dist/css/materialize.min.css";
@@ -7,8 +7,7 @@ import ProductListingCard from "./ProductListingCard";
 import ProductPreloader from "./ProductPreloader";
 import { StaticImage } from "gatsby-plugin-image";
 import { Helmet } from "react-helmet";
-import NavigationSearchbox from "../Navigation/Navigation_Searchbox";
-
+import products from "../../pages/ProductsData.json";
 <Helmet>
   <link
     rel="stylesheet"
@@ -32,19 +31,17 @@ function OnProductClick(e) {
 }
 
 function Products() {
-
-
   // const [productClicked, setProductClicked] = useState(false);
 
-  //START OF INSERTED CODE
-  const [clickedIndex, setClickedIndex] = useState({});
-  console.log("clikk sttatee", clickedIndex);
-  const handleClick = (index) => () => {
-    setClickedIndex((prevState) => ({
-      ...prevState, // <-- copy previous state
-      [index]: !prevState[index], // <-- update value by index key
-    }));
-  };
+  // //START OF INSERTED CODE
+  // const [clickedIndex, setClickedIndex] = useState({});
+  // console.log("clikk sttatee", clickedIndex);
+  // const handleClick = (index) => () => {
+  //   setClickedIndex((prevState) => ({
+  //     ...prevState, // <-- copy previous state
+  //     [index]: !prevState[index], // <-- update value by index key
+  //   }));
+  // };
 
   //END OF INSERTED CODEEEEEEEEEEEEEEEEEEEEEEEEEEE
 
@@ -52,26 +49,24 @@ function Products() {
   //     OnProductClick();
   //   }
 
-  const [data, setData] = useState({});
-  const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => {
-    const getProductsFromApiAsync = async () => {
-      const response = await fetch("https://fakestoreapi.com/products");
-      const responseJson = await response.json().then(setIsLoading(false));
-      setData(responseJson);
-    };
-    getProductsFromApiAsync();
-  }, []);
+  // const [data, setData] = useState({});
+  // const [isLoading, setIsLoading] = useState(true);
+  // useEffect(() => {
+  //   const getProductsFromApiAsync = async () => {
+  //     const response = await fetch("https://fakestoreapi.com/products");
+  //     const responseJson = await response.json().then(setIsLoading(false));
+  //     setData(responseJson);
+  //   };
+  //   getProductsFromApiAsync();
+  // }, []);
 
   let eachProductStored = [];
-
-  for (const product in data) {
-    eachProductStored.push(data[product]);
-  }
+  eachProductStored.push(products);
 
   console.log("EACH PRODUK STORE ARRAY AK", eachProductStored);
   function RenderProducts() {
-    return eachProductStored.map((products, index) => {
+    return eachProductStored[0].map((products, index) => {
+      console.log("TRESTINGG WAS WRONGGG NOWWWW", products);
       return (
         <div key={products.id} className="productContainer">
           <div class="card">
@@ -119,11 +114,10 @@ function Products() {
               </div>
             </div>
           </div>
-          <NavigationSearchbox props={products} />
           <div>
-            {clickedIndex[index] ? (
+            {/* {clickedIndex[index] ? (
               <ProductListingCard props={products} />
-            ) : null}
+            ) : null} */}
           </div>
           <a href="#" class="snipcart-checkout">
             Click here to checkout
@@ -134,10 +128,8 @@ function Products() {
   }
 
   return (
-    <React.Fragment>
-      <RenderProducts />
-      {isLoading ? <ProductPreloader /> : null}
-    </React.Fragment>
+    <RenderProducts />
+    // {/* {isLoading ? <ProductPreloader /> : null} */}
   );
 }
 export default Products;

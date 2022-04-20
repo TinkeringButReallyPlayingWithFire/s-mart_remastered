@@ -2,3 +2,134 @@
 .navbarColours {
     background-color: ghostwhite;
 }
+* {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .searchboxContainer {
+    position: relative;
+    max-width: 60vw;
+    margin-left: 20vw;
+    top: 0.8vh;
+  }
+  
+  .material-icons {
+    color: crimson !important;
+  }
+  
+  .profileIcon {
+    position: absolute;
+    z-index: 1000;
+    width: 100vw !important;
+    height: 100vh !important;
+    top: -6vh;
+    /* margin-right: 8vw !important;
+    top: -5.7vh; */
+  }
+  
+  .ShoppingIcon {
+    position: relative;
+    margin-right: 0vw !important;
+    top: -5.7vh;
+  }
+  
+  .right hide-on-med-and-down {
+    position: inherit;
+    margin-bottom: 30vh !important;
+  }
+  
+  .nav-wrapper .input-field input[type="search"] {
+    height: 5vh !important;
+    padding-left: 4rem;
+    width: calc(100% - 4rem);
+    border: 0;
+    box-shadow: none;
+  }
+  .navbarProfileCardContainer {
+    position: absolute;
+    top: 7vh;
+    right: -29vw;
+    z-index: 500;
+    width: 50vw;
+    height: 50vh;
+    box-shadow: 10%;
+  }
+  
+  .card-content{
+    color: black;
+  }
+  
+  .profileCardCloseIcon {
+    color: crimson;
+    left: 0.5vw;
+    position: relative;
+    margin-top: 32vh !important;
+    z-index: 100;
+  }
+  .navbarShoppingCardContainer
+  {
+    position: absolute;
+    top: 7vh;
+    right: -21vw;
+    z-index: 500;
+    width: 50vw;
+    height: 50vh;
+    box-shadow: 10%;
+  }
+  
+  
+  .shoppingCardCloseIcon {
+    color: crimson;
+    left: 0.5vw;
+    position: relative;
+    margin-top: 32vh !important;
+    z-index: 100;
+  }
+  
+  .shoppingCardTitle {
+    position: absolute;
+    font-weight:900;
+    color: black !important;
+    top: -2.5vh;
+  }
+  
+  .shoppingCardText {
+    position: relative;
+    top: 4vh;
+  }
+  
+  .nav-wrapper {
+    background-color:ghostwhite;
+  }
+  
+  .brand-logo {
+    left: -4vw;
+    background-color: crimson;
+    font-weight:900;
+    text-align: center !important;
+    padding-right: 0.8vw !important;
+    padding-left: 0.7vw !important;
+  
+  }
+  
+  .navLogoIcon {
+    color: aliceblue !important;
+  }
+  
+  .smartLogoImg {
+    position: absolute;
+    top: -4.5vh;
+    transform: scale(0.35);
+  }
+  
+  
+  .shoppingOverview {
+    position: absolute;
+    top: 7vh;
+    right: -21vw;
+    z-index: 500;
+    width: 50vw;
+    height: 50vh;
+    box-shadow: 10%;
+  }
+  
