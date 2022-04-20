@@ -3,7 +3,7 @@ import Footer from "../components/Footer/Footer";
 import HeroCarousel from "../components/HeroCarousel/HeroCarousel";
 import Navigation from "../components/Navigation/Navigation";
 import Products from "../components/Products/Products";
-import Search from "../components/Searchbox/SearchBox";
+import Search from "../components/Searchbox/Searchbox";
 import { body } from "./index.module.css";
 
 const searchIndices = [{ name: `Pages`, title: `Pages` }];
