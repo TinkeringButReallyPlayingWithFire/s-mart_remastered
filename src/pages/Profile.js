@@ -1,25 +1,12 @@
 import React from "react";
 import Amplify from "aws-amplify";
-import awsmobile from "../aws-exports";
+import awsmobile from '../../gatsby-browser'
 import { withAuthenticator, Authenticator } from "@aws-amplify/ui-react";
 import { AmplifyChatbot } from "@aws-amplify/ui-react/legacy";
 import "@aws-amplify/ui-react/styles.css";
 import { signContainer } from "../components/Profile/Profile.module.css";
 Amplify.configure(awsmobile);
 
-// import Homepage from "../components/Profile/Profile";
-// import { body } from "./index.module.css";
-
-// // markup
-// const ProfilePage = () => {
-//   return (
-//     <div className={body}>
-//       <Homepage />
-//     </div>
-//   );
-// };
-
-// export default ProfilePage;
 
 // markup
 const IndexPage = () => {
