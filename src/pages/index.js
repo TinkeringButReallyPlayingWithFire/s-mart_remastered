@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import React from "react";
 import Footer from "../components/Footer/Footer";
 import HeroCarousel from "../components/HeroCarousel/HeroCarousel";
@@ -18,6 +19,9 @@ const IndexPage = () => {
     <div className={body}>
       <Navigation />
       <Search indices={searchIndices} />
+      <Link to="/lemons/">TO LEMONSSS</Link>
+      <Link to="/bananas/">TO BANANASZZZZ</Link>
+
       <HeroCarousel />
       <Products />
       <Footer />

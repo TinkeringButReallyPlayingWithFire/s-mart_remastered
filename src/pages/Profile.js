@@ -290,8 +290,19 @@ const formFields = {
 
 export default function Signing() {
   return (
-    <Authenticator formFields={formFields} components={components}>
-      {({ signOut }) => <button onClick={signOut}>Sign out</button>}
-    </Authenticator>
+    <div>
+      <p>lorem ipsu pblahj blah</p>
+      <p>lorem ipsu pblahj blah</p>
+      <p>lorem ipsu pblahj blah</p>
+      <p>lorem ipsu pblahj blah</p>
+
+      <Authenticator formFields={formFields} components={components}>
+        {({ signOut }) => (
+          <button onClick={signOut} href="/">
+            Sign out
+          </button>
+        )}
+      </Authenticator>
+    </div>
   );
 }
