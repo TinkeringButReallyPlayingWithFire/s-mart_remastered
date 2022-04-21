@@ -16,40 +16,6 @@ import "../components/Profile/Profile.css";
 import { StaticImage } from "gatsby-plugin-image";
 Amplify.configure(awsmobile);
 
-// Step 1: Create a new Theme with your custom values
-
-// markup
-// const IndexPage = () => {
-//   return (
-//     <Authenticator
-//       signUpAttributes={[
-//         "birthdate",
-//         "email",
-//         "family_name",
-//         "name",
-//         "phone_number",
-//       ]}
-//     >
-//       {({ signOut, user }) => (
-//         <div>
-//           <div>
-//             <h1>Hello {user.username}</h1>
-//             {console.log("da user b from aws", user.attributes)}
-//             <h4>
-//               Name: <br />
-//               {` ${user.attributes.name} ${user.attributes.family_name}`}
-//             </h4>
-//             <h4>Email address: {user.attributes.email}</h4>
-//             <h4>Contact number: {user.attributes.phone_number}</h4>
-//             <h4>Birthdate: {user.attributes.birthdate}</h4>
-
-//             <button onClick={signOut}>Sign Out</button>
-//           </div>
-//         </div>
-//       )}
-//     </Authenticator>
-//   );
-// };
 
 const components = {
   Header() {
@@ -288,14 +254,9 @@ const formFields = {
   },
 };
 
-export default function Signing() {
+const Signing = () => {
   return (
     <div>
-      <p>lorem ipsu pblahj blah</p>
-      <p>lorem ipsu pblahj blah</p>
-      <p>lorem ipsu pblahj blah</p>
-      <p>lorem ipsu pblahj blah</p>
-
       <Authenticator formFields={formFields} components={components}>
         {({ signOut }) => (
           <button onClick={signOut} href="/">
@@ -305,4 +266,5 @@ export default function Signing() {
       </Authenticator>
     </div>
   );
-}
+};
+export default Signing;
