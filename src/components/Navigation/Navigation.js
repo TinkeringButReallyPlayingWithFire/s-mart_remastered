@@ -57,7 +57,7 @@ const Navigation = () => {
           <div className="navbar-end">
             <div className="navbar-item">
               <div className="buttons">
-                <Link to="/profile" className="button is-primary">
+                <Link to="profile" className="button is-primary">
                   <strong>Login</strong>
                 </Link>
               </div>
