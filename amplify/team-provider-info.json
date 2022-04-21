@@ -13,7 +13,12 @@
     },
     "categories": {
       "auth": {
-        "smartremastered6a7e731b": {}
+        "smartremastered923f574b": {
+          "userPoolId": "eu-west-2_Kw6oHKwZs",
+          "userPoolName": "S-Mart",
+          "webClientId": "2u84ecvo4l0qpp6nibdtfkqb5e",
+          "nativeClientId": "2u84ecvo4l0qpp6nibdtfkqb5e"
+        }
       }
     }
   }
