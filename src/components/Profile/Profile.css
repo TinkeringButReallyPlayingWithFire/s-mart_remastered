@@ -1,0 +1,24 @@
+body {
+    background-color: ghostwhite;
+}
+[data-amplify-authenticator]{
+    position: relative;
+    padding-top: 3.5%;
+left: 38.5vw;
+    }
+[amplify-field-group__field-wrapper] {
+    position: relative !important;
+    left: 0vw !important;
+}
+#sMartLogo {
+    position: absolute;
+    transform: scale(0.65);
+}
+.amplify-button[data-variation=primary] 
+{
+    background-color: crimson !important;
+}
+.amplify-button[data-variation=primary]:hover 
+{
+    background-color:rgb(255, 0, 51) !important;
+}

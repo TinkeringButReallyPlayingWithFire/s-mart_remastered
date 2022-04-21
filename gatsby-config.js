@@ -61,7 +61,6 @@ module.exports = {
           "ZjQ4MmRmMzItNmIyNi00ZjM5LWEzODEtYWI1ZDdjNDg4NTk1NjM3ODU4ODU3NjU2OTE4ODIx",
       },
     },
-
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -69,6 +68,7 @@ module.exports = {
         path: `./src/pages/`,
       },
     },
+
     `gatsby-plugin-styled-components`,
     {
       // This plugin must be placed last in your list of plugins to ensure that it can query all the GraphQL data
