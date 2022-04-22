@@ -1,5 +1,6 @@
 import React from "react";
-import Amplify from "aws-amplify";
+import { useState } from "react";
+import { Amplify, Auth } from "aws-amplify";
 import awsmobile from "../../gatsby-browser";
 import {
   Authenticator,
@@ -14,8 +15,9 @@ import {
 import "@aws-amplify/ui-react/styles.css";
 import "../components/Profile/Profile.css";
 import { StaticImage } from "gatsby-plugin-image";
+import Navigation from "../components/Navigation/Navigation";
 Amplify.configure(awsmobile);
-
+Auth.configure(awsmobile);
 
 const components = {
   Header() {
@@ -256,12 +258,43 @@ const formFields = {
 
 const Signing = () => {
   return (
-    <div>
-      <Authenticator formFields={formFields} components={components}>
-        {({ signOut }) => (
-          <button onClick={signOut} href="/">
-            Sign out
-          </button>
+    <div className="profileInformationBody">
+      <Authenticator
+        formFields={formFields}
+        components={components}
+        signUpAttributes={[
+          "birthdate",
+          "email",
+          "family_name",
+          "name",
+          "phone_number",
+        ]}
+      >
+        >
+        {({ signOut, user }) => (
+          <main>
+            <div>
+              <div className="profileInformationContainer">
+                <h1 className="borders">Hello {user.username}!</h1>
+                <h3 className="borders">Profile information</h3>
+                <h5 className="borders">
+                  Name: <br />
+                  {user.attributes.name} {user.attributes.family_name}
+                </h5>
+                <h5 className="borders">
+                  Birthday: {user.attributes.birthdate}
+                </h5>
+                <h5 className="borders">
+                  Email address: {user.attributes.email}
+                </h5>
+                <h5 className="borders">
+                  Phone number: {user.attributes.phone_number}
+                </h5>
+                {console.log(user)}
+                <button onClick={signOut}>Sign out</button>
+              </div>
+            </div>
+          </main>
         )}
       </Authenticator>
     </div>

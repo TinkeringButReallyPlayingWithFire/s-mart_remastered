@@ -1,11 +1,7 @@
 import React from "react";
-import { useState, useEffect } from "react";
 import "bulma/css/bulma.css";
 import "materialize-css/dist/css/materialize.min.css";
 import "./Products.css";
-import ProductListingCard from "./ProductListingCard";
-import ProductPreloader from "./ProductPreloader";
-import { StaticImage } from "gatsby-plugin-image";
 import { Helmet } from "react-helmet";
 import products from "../../pages/ProductsData.json";
 <Helmet>
@@ -63,10 +59,8 @@ function Products() {
   let eachProductStored = [];
   eachProductStored.push(products);
 
-  console.log("EACH PRODUK STORE ARRAY AK", eachProductStored);
   function RenderProducts() {
     return eachProductStored[0].map((products, index) => {
-      console.log("TRESTINGG WAS WRONGGG NOWWWW", products);
       return (
         <div key={products.id} className="productContainer">
           <div class="card">

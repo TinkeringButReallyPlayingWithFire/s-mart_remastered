@@ -22,3 +22,22 @@ left: 38.5vw;
 {
     background-color:rgb(255, 0, 51) !important;
 }
+
+.profileInformationContainer {
+    position: absolute;
+    background-color: white;
+    display: flexbox;
+    left: 38vw;
+    top: 20vh;
+
+}
+
+.borders {
+    border:1px groove rgb(208, 208, 208);
+
+}
+
+.card {
+    position: fixed;
+    right: 0vw;
+}

@@ -3,10 +3,12 @@ import { useState } from "react";
 import "bulma/css/bulma.css";
 import { container, navbarColours } from "./Navigation.module.css";
 import { StaticImage } from "gatsby-plugin-image";
-import NavigationProfileIcon from "./NavigationProfileIcon";
 import { Link } from "gatsby";
-
-const Navigation = () => {
+import { Auth } from "aws-amplify";
+const Navigation = (props) => {
+  const amnesiaHome = () => {
+    window.localStorage.clear(); //clear all localstorage
+  };
   return (
     <div>
       <nav
@@ -21,7 +23,7 @@ const Navigation = () => {
               alt="A colourful shopping cart logo with the brand name."
             />
           </a>
-
+          {/* {console.log("dis be da propspssppsp", userInfo)} */}
           <a
             role="button"
             className="navbar-burger"
@@ -37,29 +39,26 @@ const Navigation = () => {
 
         <div id="navbarBasicExample" className="navbar-menu">
           <div className="navbar-start">
-            <a className="navbar-item">Home</a>
+            <a className="navbar-item" href="/" onClick={amnesiaHome}>
+              Home
+            </a>
 
             <a className="navbar-item">Documentation</a>
-
-            <div className="navbar-item has-dropdown is-hoverable">
-              <a className="navbar-link">More</a>
-
-              <div className="navbar-dropdown">
-                <a className="navbar-item">About</a>
-                <a className="navbar-item">Jobs</a>
-                <a className="navbar-item">Contact</a>
-                <hr className="navbar-divider" />
-                <a className="navbar-item">Report an issue</a>
-              </div>
-            </div>
           </div>
-          <div>{/* <NavigationProfileIcon /> */}</div>
           <div className="navbar-end">
             <div className="navbar-item">
               <div className="buttons">
+                {/* {Auth.currentAuthenticatedUser ? (
+                    <p>
+                      <strong>
+                        Welcome back {Auth.currentUserInfo.username}
+                      </strong>
+                    </p>
+                  ) : ( */}
                 <Link to="/Signin/" className="button is-primary">
                   <strong>Login</strong>
                 </Link>
+                {/* )} */}
               </div>
             </div>
           </div>

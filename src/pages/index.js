@@ -6,6 +6,10 @@ import Navigation from "../components/Navigation/Navigation";
 import Products from "../components/Products/Products";
 import Search from "../components/Searchbox/Searchbox";
 import { body } from "./index.module.css";
+import Amplify, { Auth } from "aws-amplify";
+import awsconfig from "../aws-exports";
+Amplify.configure(awsconfig);
+Auth.configure(awsconfig);
 
 const searchIndices = [{ name: `Pages`, title: `Pages` }];
 // const searchClient = algoliasearch(
@@ -21,7 +25,6 @@ const IndexPage = () => {
       <Search indices={searchIndices} />
       <Link to="/lemons/">TO LEMONSSS</Link>
       <Link to="/bananas/">TO BANANASZZZZ</Link>
-
       <HeroCarousel />
       <Products />
       <Footer />
