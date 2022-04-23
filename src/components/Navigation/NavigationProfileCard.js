@@ -20,9 +20,6 @@ function NavigationProfileCard() {
                   <i class="material-icons profileCardCloseIcon">close</i>
                 </a>
               </li>
-              {/* <div>
-        {closedProfileCard ? null : <NavbarProfileCard/>}
-      </div> */}
             </div>
             <div class="card-content">
               <p>

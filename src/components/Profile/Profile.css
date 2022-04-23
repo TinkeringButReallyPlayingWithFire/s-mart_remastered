@@ -1,5 +1,9 @@
+
 body {
+    font-family: 'Fira Sans', sans-serif !important;
     background-color: ghostwhite;
+    margin: 2%;
+
 }
 [data-amplify-authenticator]{
     position: relative;
@@ -25,19 +29,54 @@ left: 38.5vw;
 
 .profileInformationContainer {
     position: absolute;
-    background-color: white;
+    width: 30vw !important;
+    background-color: ghostwhite;
+    height: 73vh;
     display: flexbox;
-    left: 38vw;
-    top: 20vh;
+    left: 35.5vw;
+    top: 13vh;
+    border-radius: 25%;
 
 }
 
-.borders {
-    border:1px groove rgb(208, 208, 208);
+.welcomeTitle {
 
+    font-weight: bolder;
+    color: crimson;
+    font-size: 5vw;
+    text-align: center;
 }
 
 .card {
     position: fixed;
     right: 0vw;
+}
+
+.footerContainer {
+    position: relative;
+
+}
+
+.birthdayHeader {
+    font-weight: bolder;
+}
+
+.videoBody {
+    width: 100%;
+    height: 50vw;
+    position: relative;
+    z-index: 0;
+    opacity: 0.2;
+}
+
+.profileInfoContainer {
+    padding-left: 2.25vw;
+    padding-top: 0.15vh;
+}
+
+.headerBolding {
+    font-weight: bolder;
+}
+.profileTitle {
+    font-weight: bold;
 }
