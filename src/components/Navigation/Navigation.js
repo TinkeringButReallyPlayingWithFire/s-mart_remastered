@@ -6,26 +6,42 @@ import {
   navbarColours,
   profileIconSVG,
   navigationDropdownContainer,
+  navigationDropdownBox,
+  shoppingCartIcon,
 } from "./Navigation.module.css";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 import { Auth } from "aws-amplify";
 import { Helmet } from "react-helmet";
-import NavigationProfileCard from "./NavigationProfileCard";
+import { SignOut } from "aws-amplify-react";
 <Helmet>
   <link
     href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet"
   />
+  <link
+    rel="stylesheet"
+    href="https://cdn.snipcart.com/themes/v3.3.3/default/snipcart.css"
+  />
+  <script
+    async
+    src="https://cdn.snipcart.com/themes/v3.3.3/default/snipcart.js"
+  ></script>
+  <div
+    id="snipcart"
+    data-config-modal-style="side"
+    data-api-key="ZjQ4MmRmMzItNmIyNi00ZjM5LWEzODEtYWI1ZDdjNDg4NTk1NjM3ODU4ODU3NjU2OTE4ODIx"
+    hidden
+    data-autopop="true"
+  ></div>
 </Helmet>;
-const Navigation = (props) => {
-  const amnesiaHome = () => {
-    window.localStorage.clear(); //clear all localstorage
-  };
 
+const Navigation = (props) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [usernameAttribute, setUsernameAttribute] = useState("");
   const [isHovered, setIsHovered] = useState(false);
+  const [shoppingIconHovered, setshoppingIconHovered] = useState(false);
+
   useEffect(() => {
     isUserLoggedIn();
   }, []);
@@ -87,58 +103,86 @@ const Navigation = (props) => {
         {console.log("DA PROPPPPPPPP", props)}
         <div id="navbarBasicExample" className="navbar-menu">
           <div className="navbar-start">
-            <a className="navbar-item" href="/" onClick={amnesiaHome}>
+            <Link to="/" className="navbar-item">
               Home
-            </a>
+            </Link>
 
-            <a className="navbar-item">Documentation</a>
+            <Link to="/products" className="navbar-item">
+              Products
+            </Link>
+          </div>
+          <div className={shoppingCartIcon}>
+            <StaticImage
+              src="../../images/cart-outline.svg"
+              alt="Shopping Cart for all your needs"
+            />
           </div>
 
-          <div className="buttons">
-            {/* USER CHECKING */}
-            {isLoggedIn ? (
-              <p>
-                <strong>Welcome back {usernameAttribute}</strong>
-              </p>
-            ) : (
-              <Link to="/Signin/" className="button is-primary">
-                <strong>Login</strong>
-              </Link>
-            )}
+          <div>
+            <div className="buttons">
+              {/* USER CHECKING */}
+              {isLoggedIn ? (
+                <p className="welcomeMessageContainer">
+                  <strong>Welcome back {usernameAttribute}</strong>
+                </p>
+              ) : (
+                <Link to="/Signin/" className="button is-primary">
+                  <strong>Login</strong>
+                </Link>
+              )}
 
-            <div className={`navbar-end ${navigationDropdownContainer}`}>
-              <div className="navbar-item">
-                <div class="navbar-item has-dropdown is-hoverable">
-                  <a class="navbar-link">
-                    <StaticImage
-                      class={profileIconSVG}
-                      src="../../images/person-circle-outline.svg"
-                      alt="Person icon for a profile"
-                    />
-                  </a>
-
-                  <div
-                    class={`navbar-dropdown`}
-                    onMouseOver={() => {
-                      setIsHovered(true);
-                    }}
-                  >
-                    {isLoggedIn && isHovered ? (
-                      <NavigationProfileCard />
-                    ) : (
+              <div className={`navbar-end ${navigationDropdownContainer}`}>
+                <div className="navbar-item">
+                  <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
                       <div>
-                        <p>You are not currently logged in.</p>
-                        <Link to="/Signin/" className="button is-primary">
-                          <strong>Login</strong>
-                        </Link>
+                        <StaticImage
+                          class={profileIconSVG}
+                          onMouseOver={() => {
+                            setIsHovered(true);
+                          }}
+                          src="../../images/person-circle-outline.svg"
+                          alt="Person icon for a profile"
+                        />
                       </div>
-                    )}
-                    <a class="navbar-item">About</a>
-                    <a class="navbar-item">Jobs</a>
-                    <a class="navbar-item">Contact</a>
+                    </a>
 
-                    <hr class="navbar-divider" />
-                    <a class="navbar-item">Report an issue</a>
+                    <div class={`navbar-dropdown ${navigationDropdownBox}`}>
+                      {isLoggedIn && isHovered ? (
+                        <div class="dropdown is-right is-active">
+                          <div class="dropdown-trigger">
+                            <p>
+                              <strong>Your Account</strong>
+                            </p>
+                            <button
+                              class="button"
+                              aria-haspopup="true"
+                              aria-controls="dropdown-menu6"
+                            >
+                              <Link to="/Signin/" className="button is-primary">
+                                <strong>Profile</strong>
+                              </Link>
+                            </button>
+                            <button
+                              class="button"
+                              aria-haspopup="true"
+                              aria-controls="dropdown-menu6"
+                            >
+                              <Link to={SignOut} className="button is-primary ">
+                                <strong>Sign Out</strong>
+                              </Link>
+                            </button>
+                          </div>
+                        </div>
+                      ) : (
+                        <div>
+                          <p>You are not currently logged in.</p>
+                          <Link to="/Signin/" className="button is-primary">
+                            <strong>Login</strong>
+                          </Link>
+                        </div>
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>

@@ -17,21 +17,14 @@
     color: crimson !important;
   }
   
-  .profileIcon {
-    position: absolute;
-    z-index: 1000;
-    width: 100vw !important;
-    height: 100vh !important;
-    top: -6vh;
-    /* margin-right: 8vw !important;
-    top: -5.7vh; */
-  }
-  
-  .ShoppingIcon {
-    position: relative;
-    margin-right: 0vw !important;
-    top: -5.7vh;
-  }
+
+.shoppingCartIcon {
+  position: absolute;
+  z-index: 1000;
+  width: 100vw !important;
+  height: 100vh !important;
+
+}
   
   .right hide-on-med-and-down {
     position: inherit;
@@ -134,19 +127,41 @@
   }
   
   .profileIconSVG {
-    position: absolute;
+    position: relative;
     transform: scale(1);
     margin: 0%;
     padding: 0%;
-    color: crimson !important;
+    filter: invert(31%) sepia(90%) saturate(6221%) hue-rotate(344deg) brightness(93%) contrast(90%);
+
  }
 
+.shoppingCartIcon {
+  position: absolute;
+  transform: scale(0.09);
+  top: 0vh;
+
+  filter: invert(31%) sepia(90%) saturate(6221%) hue-rotate(344deg) brightness(93%) contrast(90%) !important;
 
 
- 
+}
  .navigationDropdownContainer {
-   position:sticky;
-   top: 20vh;
-   width: 5vw;
-   height: 10vh;
+   position:relative;
+   right: 0vw;
+
  }
+
+.navigationDropdownBox {
+  position: absolute;
+  /* top: 3vh; */
+  transform: translateX(-40%) !important;
+  top: 4vh;
+  
+}
+.shoppingCartIconContainer{
+  margin: 0%;
+  padding: 0%;
+}
+
+.shoppingIconTitle {
+  max-width: 10vw;
+}

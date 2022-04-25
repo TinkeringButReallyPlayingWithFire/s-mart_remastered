@@ -1,0 +1,26 @@
+
+.productImage {
+
+    max-width: 20vw;
+width: fit-content;    
+margin-top: 5%;
+margin-left: 10%;
+
+
+}
+
+.col1_container {
+    background-color: ghostwhite;
+}
+.col2_container {
+    padding-top: 0%;
+    background-color:bisque;
+}
+
+.productStyleText {
+    opacity: 0.5;
+}
+
+.mybliggggg {
+    background-color: red;
+}
