@@ -28,20 +28,6 @@ function ProductListingCard(props) {
       </div>
     );
   }
-  //   function ratingsView(rating) {
-  //     let ratingsStore = [];
-  //     console.log("rating store arr", ratingsStore);
-  //  return (
-  //    ratingsStore.map(() =>  {
-  //       return (
-  //         <Ratings />
-  //       )
-  //    })
-
-  //  )
-
-  //   }
-
   return productProps.map((product, index) => {
     return (
       <div>

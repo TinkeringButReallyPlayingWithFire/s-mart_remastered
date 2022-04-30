@@ -44,17 +44,14 @@ function OnProductClick(e) {
 function Products() {
   // const [productClicked, setProductClicked] = useState(false);
 
-  // //START OF INSERTED CODE
   // const [clickedIndex, setClickedIndex] = useState({});
-  // console.log("clikk sttatee", clickedIndex);
+  // console.log("click state", clickedIndex);
   // const handleClick = (index) => () => {
   //   setClickedIndex((prevState) => ({
   //     ...prevState, // <-- copy previous state
   //     [index]: !prevState[index], // <-- update value by index key
   //   }));
   // };
-
-  //END OF INSERTED CODEEEEEEEEEEEEEEEEEEEEEEEEEEE
 
   //   function preventDefaultANDState() {
   //     OnProductClick();
@@ -91,7 +88,8 @@ function Products() {
                 to={`/products/${slugify(products.title)}`}
                 class="btn btn-primary linkContainer"
               >
-                <StaticImage className="eyeImage"
+                <StaticImage
+                  className="eyeImage"
                   src="../../images/Eye.jpg"
                   alt="See the unseen..."
                 />

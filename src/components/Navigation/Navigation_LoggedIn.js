@@ -31,7 +31,6 @@ const Navigation_LoggedIn = (props) => {
               alt="A colourful shopping cart logo with the brand name."
             />
           </a>
-          {/* {console.log("dis be da propspssppsp", userInfo)} */}
           <a
             role="button"
             className="navbar-burger"

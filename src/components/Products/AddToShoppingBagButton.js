@@ -8,7 +8,6 @@ import NavbarShoppingCard from "../Navigation/NavbarShoppingCard";
 function AddToShoppingBagButton(props) {
   const [productCount, setproductCount] = useState([]);
   const [clickedIndex, setClickedIndex] = useState({});
-  console.log("clikk sttatee", clickedIndex);
   const handleClick = (props) => () => {
     setproductCount(+1);
     setClickedIndex((prevState) => ({
@@ -17,15 +16,13 @@ function AddToShoppingBagButton(props) {
     }));
   };
 
-  console.log("counterrrrrrrrrrrr", productCount);
-  console.log("checkkcck disissi  fujff", clickedIndex);
+
   let shoppingBagProps = [];
 
   for (const product in props) {
     shoppingBagProps.push(props[product]);
   }
 
-  console.log("halt adventuror u o1 i seekkk", shoppingBagProps);
 
   let activeIndexes = [];
 
@@ -33,7 +30,6 @@ function AddToShoppingBagButton(props) {
     activeIndexes.push(index);
   }
 
-  console.log("atryyyyy dosssss activvv indexxxx", activeIndexes);
 
   function RenderShoppingBagButton() {
     return shoppingBagProps.map((props, index) => {

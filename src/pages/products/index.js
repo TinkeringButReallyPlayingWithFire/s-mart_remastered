@@ -7,7 +7,7 @@ import Products from "../../components/Products/Products";
 import Search from "../../components/Searchbox/Searchbox";
 import "../index.css";
 import Amplify, { Auth } from "aws-amplify";
-import awsconfig from "../../aws-exports";
+import awsconfig from "../../../gatsby-browser";
 Amplify.configure(awsconfig);
 Auth.configure(awsconfig);
 
