@@ -1,10 +1,4 @@
 
-body {
-    font-family: 'Fira Sans', sans-serif !important;
-    /* background-color: ghostwhite; */
-    margin: 2%;
-
-}
 [data-amplify-authenticator]{
     position: relative;
     padding-top: 3.5%;
@@ -29,13 +23,14 @@ left: 38.5vw;
 
 .profileInformationContainer {
     position: absolute;
-    width: 30vw !important;
+    width: 25vw !important;
     background-color: ghostwhite;
     height: 73vh;
     display: flexbox;
     left: 35.5vw;
-    top: 13vh;
+    top: 9vh;
     border-radius: 25%;
+    text-align: center;
 
 }
 
@@ -54,6 +49,7 @@ left: 38.5vw;
 
 .footerContainer {
     position: relative;
+    top: 77vh !important;
 
 }
 
@@ -70,7 +66,7 @@ left: 38.5vw;
 }
 
 .profileInfoContainer {
-    padding-left: 2.25vw;
+    padding-left: 0vw;
     padding-top: 0.15vh;
 }
 
@@ -80,3 +76,198 @@ left: 38.5vw;
 .profileTitle {
     font-weight: bold;
 }
+
+.signoutButton {
+    position: relative;
+    left: 0%;
+    margin: 2%;
+    top: 5%;
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 600px) {
+    .profileInformationContainer {
+        position: absolute;
+        width: 60vw !important;
+        background-color: ghostwhite;
+        height: 73vh;
+        display: flexbox;
+        left: 20.5vw;
+        top: 9vh;
+        border-radius: 25%;
+    
+    }
+
+
+    .profileInfoContainer {
+        padding-left: 3vw;
+        padding-top: 0.15vh;
+    }
+    .signoutButton {
+        position: relative;
+        left: 0%;
+        margin: 2%;
+        top: 2%;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 1120px) {
+    .profileInformationContainer {
+        position: absolute;
+        width: 60vw !important;
+        background-color: ghostwhite;
+        height: 73vh;
+        display: flexbox;
+        left: 20.5vw;
+        top: 9vh;
+        border-radius: 25%;
+    
+    }
+
+
+    .profileInfoContainer {
+        padding-left: 3vw;
+        padding-top: 0.15vh;
+    }
+    .signoutButton {
+        position: relative;
+        left: 0%;
+        margin: 2%;
+        top: 0%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .profileInformationContainer {
+        position: absolute;
+        width: 60vw !important;
+        background-color: ghostwhite;
+        height: 73vh;
+        display: flexbox;
+        left: 20.5vw;
+        top: 9vh;
+        border-radius: 25%;
+    
+    }
+
+
+    .profileInfoContainer {
+        padding-left: 3vw;
+        padding-top: 0.15vh;
+    }
+    .signoutButton {
+        position: relative;
+        left: 0%;
+        margin: 2%;
+        top: -5%;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .profileInformationContainer {
+        position: absolute;
+        width: 65vw !important;
+        background-color: ghostwhite;
+        height: 73vh;
+        display: flexbox;
+        left: 17.5vw;
+        top: 9vh;
+        border-radius: 25%;
+    
+    }
+
+
+    .profileInfoContainer {
+        padding-left: 0vw;
+        padding-top: 0.15vh;
+    }
+    
+    .signoutButton {
+        position: relative;
+        width: 5vw;
+        left: 0%;
+        font-weight: bolder;
+        margin: 2%;
+        top: 5%;
+    }
+
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 599px) {
+        .profileInformationContainer {
+            position: absolute;
+            width: 65vw !important;
+            background-color: ghostwhite;
+            height: 73vh;
+            display: flexbox;
+            left: 20.5vw;
+            top: 9vh;
+            border-radius: 25%;
+        
+        }
+    
+    
+        .profileInfoContainer {
+            padding-left: 3vw;
+            padding-top: 0.15vh;
+        }
+        
+        .signoutButton {
+            position: relative;
+            width: 12vw;
+            left: 0%;
+            font-weight: bolder;
+            margin: 2%;
+            top: 0%;
+        }
+    
+    }
+    
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 375px) {
+    .profileInformationContainer {
+        position: absolute;
+        width: 75vw !important;
+        background-color: ghostwhite;
+        height: 73vh;
+        display: flexbox;
+        left: 13.5vw;
+        top: 9vh;
+        border-radius: 25%;
+    
+    }
+
+
+    .profileInfoContainer {
+        padding-left: 0vw;
+        padding-top: 0.15vh;
+        transform: scale(0.8);
+    }
+    
+    .signoutButton {
+        position: relative;
+        width: 17vw;
+        left: 37.5%;
+        font-weight: bolder;
+        margin: 2%;
+        top: -9%;
+    }
+
+
+    
+[data-amplify-authenticator]{
+    position: relative;
+    padding-top: 3.5%;
+left: 0vw;
+    }
+
+}
+

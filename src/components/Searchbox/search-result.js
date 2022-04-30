@@ -1,5 +1,6 @@
 import { Link } from "gatsby";
 import { default as React } from "react";
+import slugify from "react-slugify";
 
 import {
   connectStateResults,
@@ -31,10 +32,9 @@ const HitCount = connectStateResults(({ searchResults }) => {
     </div>
   ) : null;
 });
-//yeehaawww purrty sure it bey dis one hyukk hyukk gfawwww akaka - chanfge thisd shit cus u aint got no damn slugs m sheit
 const PageHit = ({ hit }) => (
   <div>
-    <Link to={hit.title}>
+    <Link to={`${slugify(hit.title)}`}>
       <div>
         <img src={hit.image} attribute="image" hit={hit} tagName="mark" />
         <Highlight attribute="title" hit={hit} tagName="mark" />

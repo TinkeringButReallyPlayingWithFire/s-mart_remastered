@@ -22,6 +22,7 @@ export default styled(SearchBox)`
   flex-direction: row-reverse;
   align-items: center;
   margin-bottom: 0;
+  z-index: -100 !important;
 
   .SearchInput {
     outline: none;
@@ -29,6 +30,7 @@ export default styled(SearchBox)`
     font-size: 1em;
     transition: 100ms;
     border-radius: 2px;
+
     color: ${({ theme }) => theme.foreground};
     ::placeholder {
       color: ${({ theme }) => theme.faded};
@@ -41,5 +43,7 @@ export default styled(SearchBox)`
     margin: 0.3em;
     color: ${({ theme }) => theme.foreground};
     pointer-events: none;
+    filter: invert(31%) sepia(90%) saturate(6221%) hue-rotate(344deg)
+      brightness(93%) contrast(90%);
   }
 `;

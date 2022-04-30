@@ -8,6 +8,10 @@ import {
   navigationDropdownContainer,
   navigationDropdownBox,
   shoppingCartIcon,
+  yourAccountTitle,
+  yourAccountButtons,
+  yourAccountTitleBurger,
+  navburgerContainer,
 } from "./Navigation.module.css";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
@@ -41,6 +45,7 @@ const Navigation = (props) => {
   const [usernameAttribute, setUsernameAttribute] = useState("");
   const [isHovered, setIsHovered] = useState(false);
   const [shoppingIconHovered, setshoppingIconHovered] = useState(false);
+  const [isBurgerActive, setisBurgerActive] = useState(false);
 
   useEffect(() => {
     isUserLoggedIn();
@@ -70,9 +75,6 @@ const Navigation = (props) => {
       });
   }
 
-  {
-    console.log("deadd aaaaaa", usernameAttribute);
-  }
   return (
     <div>
       <nav
@@ -89,18 +91,46 @@ const Navigation = (props) => {
           </a>
           {/* {console.log("dis be da propspssppsp", userInfo)} */}
           <a
+            onClick={() => {
+              setisBurgerActive(!isBurgerActive);
+            }}
             role="button"
-            className="navbar-burger"
+            class="navbar-burger"
+            data-target="navMenu"
             aria-label="menu"
             aria-expanded="false"
-            data-target="navbarBasicExample"
           >
-            <span aria-hidden="true" />
-            <span aria-hidden="true" />
-            <span aria-hidden="true" />
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
           </a>
+          <div
+            id="navbarBasicExample"
+            className={`navbar-menu ${isBurgerActive ? "is-active" : ""}`}
+          >
+            <div className={`navbar-start ${navburgerContainer}`}>
+              {isBurgerActive && isLoggedIn ? (
+                <div className={yourAccountButtons}>
+                  <p className={`navbar-item ${yourAccountTitleBurger}`}>
+                    Your Account
+                  </p>
+                  <Link to="/" className="navbar-item button is-primary">
+                    Home
+                  </Link>
+                  <Link to="/" className="navbar-item button is-primary">
+                    Profile
+                  </Link>
+                </div>
+              ) : null}
+              {!isLoggedIn && isBurgerActive ? (
+                <Link to="/Signin" className="navbar-item button is-primary">
+                  Login
+                </Link>
+              ) : null}
+            </div>
+          </div>
+          <div class="navbar-menu" id="navMenu"></div>
         </div>
-        {console.log("DA PROPPPPPPPP", props)}
         <div id="navbarBasicExample" className="navbar-menu">
           <div className="navbar-start">
             <Link to="/" className="navbar-item">
@@ -110,12 +140,22 @@ const Navigation = (props) => {
             <Link to="/products" className="navbar-item">
               Products
             </Link>
-          </div>
-          <div className={shoppingCartIcon}>
-            <StaticImage
-              src="../../images/cart-outline.svg"
-              alt="Shopping Cart for all your needs"
-            />
+
+            <div
+              className={shoppingCartIcon}
+              onClick={() => {
+                setshoppingIconHovered(!shoppingIconHovered);
+              }}
+            >
+              <StaticImage
+                className="snipcart-checkout"
+                src="../../images/cart-outline.svg"
+                alt="Shopping Cart for all your needs"
+              />
+            </div>
+            <div className="shoppingBagCountContainer">
+              <span class="snipcart-items-count shoppingBagCount"></span>
+            </div>
           </div>
 
           <div>
@@ -147,42 +187,14 @@ const Navigation = (props) => {
                       </div>
                     </a>
 
-                    <div class={`navbar-dropdown ${navigationDropdownBox}`}>
-                      {isLoggedIn && isHovered ? (
-                        <div class="dropdown is-right is-active">
-                          <div class="dropdown-trigger">
-                            <p>
-                              <strong>Your Account</strong>
-                            </p>
-                            <button
-                              class="button"
-                              aria-haspopup="true"
-                              aria-controls="dropdown-menu6"
-                            >
-                              <Link to="/Signin/" className="button is-primary">
-                                <strong>Profile</strong>
-                              </Link>
-                            </button>
-                            <button
-                              class="button"
-                              aria-haspopup="true"
-                              aria-controls="dropdown-menu6"
-                            >
-                              <Link to={SignOut} className="button is-primary ">
-                                <strong>Sign Out</strong>
-                              </Link>
-                            </button>
-                          </div>
-                        </div>
-                      ) : (
-                        <div>
-                          <p>You are not currently logged in.</p>
-                          <Link to="/Signin/" className="button is-primary">
-                            <strong>Login</strong>
-                          </Link>
-                        </div>
-                      )}
-                    </div>
+                    {isLoggedIn && isHovered ? (
+                      <div>
+                        <h6 className={yourAccountTitle}>Your Account</h6>
+                        <Link to="/Signin" className="button is-primary">
+                          Profile
+                        </Link>
+                      </div>
+                    ) : null}
                   </div>
                 </div>
               </div>

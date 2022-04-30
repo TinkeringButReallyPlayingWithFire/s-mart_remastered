@@ -4,7 +4,7 @@
     max-width: 20vw;
 width: fit-content;    
 margin-top: 5%;
-margin-left: 10%;
+margin-left: 25%;
 
 
 }
@@ -14,13 +14,44 @@ margin-left: 10%;
 }
 .col2_container {
     padding-top: 0%;
-    background-color:bisque;
 }
 
 .productStyleText {
     opacity: 0.5;
 }
 
-.mybliggggg {
-    background-color: red;
+
+nav {
+    z-index: 0 !important;
+}
+
+
+
+
+.shoppingBagCount {
+position: relative;
+color: blue;
+z-index: 999;
+}
+
+.productShoppingCartButton {
+    position: relative;
+    margin-top: 5%;
+
+}
+
+.breadcrumbContainer {
+    background-color: crimson;
+}
+
+.breadcrumbLinks {
+    color: white !important;
+}
+.breadcrumbLinkActive {
+    color: ghostwhite !important;
+    text-decoration: underline;
+}
+
+.giscusContainer {
+    margin: 2%;
 }

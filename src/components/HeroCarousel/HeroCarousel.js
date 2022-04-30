@@ -21,22 +21,46 @@ export default class HeroCarousel extends Component {
         <div className={container}>
           <Slider {...settings}>
             <div class="parallax-window" data-parallax="scroll">
-              <StaticImage src="../../images/sale.jpg" alt="Sale" />
+              <StaticImage
+                className="carousel_image"
+                src="../../images/sale.jpg"
+                alt="Sale"
+              />
             </div>
             <div>
-              <h3>2</h3>
+              <StaticImage
+                className="carousel_image"
+                src="../../images/full-assortment.jpg"
+                alt="Sale"
+              />
             </div>
             <div>
-              <h3>3</h3>
+              <StaticImage
+                className="carousel_image"
+                src="../../images/sneakers.jpg"
+                alt="Sale"
+              />
             </div>
             <div>
-              <h3>4</h3>
+              <StaticImage
+                className="carousel_image"
+                src="../../images/clothes.jpg"
+                alt="Sale"
+              />
             </div>
             <div>
-              <h3>5</h3>
+              <StaticImage
+                className="carousel_image"
+                src="../../images/ring.jpg"
+                alt="Sale"
+              />
             </div>
             <div>
-              <h3>6</h3>
+              <StaticImage
+                className="carousel_image"
+                src="../../images/electronics.jpg"
+                alt="Sale"
+              />
             </div>
           </Slider>
         </div>

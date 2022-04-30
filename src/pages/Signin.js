@@ -347,17 +347,20 @@ const Signin = () => {
                     {user.attributes.phone_number}
                   </h5>
                 </div>
-                <button onClick={signOut} className="button is-primary">
+                <button
+                  onClick={signOut}
+                  className="button is-primary signoutButton"
+                >
                   Sign out
                 </button>
               </div>
             </div>
-            <div className="footerContainer">
-              <Footer />
-            </div>
           </main>
         )}
       </Authenticator>
+      <div className="footerContainer">
+        <Footer />
+      </div>
     </div>
   );
 };

@@ -1,0 +1,689 @@
+
+.leftSideContainer {
+    position: absolute;
+    background-color: ghostwhite;
+    width: 50%;
+    height: 100% ;
+
+}
+
+
+
+.sMartLogo {
+    position: absolute;
+    left: 25%;
+    top: 10%;
+    
+}
+.landingLeftTitle {
+    font: 900 10vw Rubik, sans-serif !important;
+
+    position: absolute;
+    top: 45%;
+    width: 75%;
+    left: 12%;
+    text-align: center;
+    font-weight: bold;
+    color: crimson;
+}
+
+.landingRightTitle {
+    font: 900 4vw Rubik, sans-serif !important;
+    position: absolute;
+    top: 1%;
+    width: 50%;
+    right: -75%;
+    text-align: center;
+    font-weight: bold;
+    color: crimson;
+}
+
+.videoBody
+{
+position: fixed;
+z-index: -100;
+top: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.1;
+  background-color: navy;
+}
+
+.buttonPOS {
+position: absolute;
+font: 900 1vw Rubik, sans-serif !important;
+
+left: 45%;
+top: 80%;
+}
+
+
+/* Beginning media queries */
+/* Beginning media queries */
+/* Beginning media queries */
+/* Beginning media queries */
+@media only screen and (max-width: 295px) {
+    .leftSideContainer {
+        position: absolute;
+        background-color: ghostwhite;
+        width: 50%;
+        height: 150% ;
+    
+    }
+    .sMartLogo {
+        left: 10%;
+        max-width: 80%;
+    }
+    .landingLeftTitle {
+        font: 900 6vw Rubik, sans-serif !important;
+        top: 18%;
+        left: 2.5%;
+        transform: scale(0.5);
+
+    }
+    
+.landingRightTitle {
+    font: 900 7.5vw Rubik, sans-serif !important;
+    right: -60%;
+}
+.buttonPOS {
+    font: 900 5vw Rubik, sans-serif !important;
+    left: 30%;
+    top: 85%;
+
+    }
+    .videoBody {
+position: fixed;
+z-index: -100;
+top: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.1;
+  background-color: navy;
+  transform:scaleY(6) !important;
+}
+}
+
+
+
+@media only screen and (max-width: 380px) {
+    .sMartLogo {
+        left: 10%;
+        max-width: 80%;
+    }
+    .landingLeftTitle {
+        font: 900 6vw Rubik, sans-serif !important;
+        top: 18%;
+        left: 2.5%;
+        transform: scale(0.5);
+
+    }
+    
+.landingRightTitle {
+    font: 900 7.5vw Rubik, sans-serif !important;
+    right: -60%;
+}
+.buttonPOS {
+    font: 900 3.5vw Rubik, sans-serif !important;
+    left: 30%;
+    top: 85%;
+
+    }
+    .videoBody {
+position: fixed;
+z-index: -100;
+top: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.1;
+  background-color: navy;
+  transform:scaleY(6) !important;
+}
+}
+
+@media only screen and (max-width: 430px) {
+    .sMartLogo {
+        left: 10%;
+        max-width: 80%;
+    }
+    .landingLeftTitle {
+        font: 900 6vw Rubik, sans-serif !important;
+        top: 18%;
+        left: 2.5%;
+        transform: scale(0.5);
+
+    }
+    
+.landingRightTitle {
+    font: 900 7.5vw Rubik, sans-serif !important;
+    right: -60%;
+}
+.buttonPOS {
+    font: 900 3.5vw Rubik, sans-serif !important;
+    left: 30%;
+    top: 85%;
+
+    }
+    .videoBody {
+position: fixed;
+z-index: -100;
+top: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.1;
+  background-color: navy;
+  transform:scaleY(5) !important;
+}
+}
+
+
+
+
+
+@media only screen and (max-width: 540px) {
+    .sMartLogo {
+        left: 10%;
+        max-width: 80%;
+    }
+    .landingLeftTitle {
+        font: 900 6vw Rubik, sans-serif !important;
+        top: 18%;
+        left: 2.5%;
+        transform: scale(0.5);
+
+    }
+    
+.landingRightTitle {
+    font: 900 7.2vw Rubik, sans-serif !important;
+    right: -60%;
+}
+.buttonPOS {
+    font: 900 3.2vw Rubik, sans-serif !important;
+    left: 30%;
+    top: 85%;
+
+    }
+    .videoBody {
+position: fixed;
+z-index: -100;
+top: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.1;
+  background-color: navy;
+  transform:scaleY(3.55);
+}
+}
+
+
+@media only screen and (max-width: 575px) {
+    .sMartLogo {
+        left: 10%;
+        max-width: 80%;
+    }
+    .landingLeftTitle {
+        font: 900 6vw Rubik, sans-serif !important;
+        top: 18%;
+        left: 2.5%;
+        transform: scale(0.5);
+
+    }
+    
+.landingRightTitle {
+    font: 900 4vw Rubik, sans-serif !important;
+    right: -60%;
+}
+.buttonPOS {
+    font: 900 3.2vw Rubik, sans-serif !important;
+    left: 30%;
+    top: 85%;
+
+    }
+    .videoBody
+{
+position: fixed;
+z-index: -100;
+top: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.1;
+  background-color: navy;
+  transform:scaleY(3.55);
+}
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .sMartLogo {
+        left: 10%;
+        max-width: 80%;
+    }
+    .landingLeftTitle {
+        font: 900 5vw Rubik, sans-serif !important;
+        top: 18%;
+        left: 2.5%;
+        transform: scale(0.5);
+
+    }
+    
+.landingRightTitle {
+    font: 900 7.7vw Rubik, sans-serif !important;
+    right: -60%;
+}
+.buttonPOS {
+    font: 900 3.7vw Rubik, sans-serif !important;
+    left: 30%;
+    top: 85%;
+
+    }
+    .videoBody
+{
+position: fixed;
+z-index: -100;
+top: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.1;
+  background-color: navy;
+  transform:scaleY(3.55);
+}
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .sMartLogo {
+        left: 10%;
+        max-width: 80%;
+    }
+    .landingLeftTitle {
+        font: 900 5vw Rubik, sans-serif !important;
+        top: 32%;
+        left: 2.5%;
+        transform: scale(0.8);
+    }
+    .landingRightTitle {
+        font: 900 6.7vw Rubik, sans-serif !important;
+        right: -65%;
+    }
+    .buttonPOS {
+        font: 900 2.7vw Rubik, sans-serif !important;
+        left: 35%;
+        top: 85%;
+    
+        }
+        .videoBody
+        {
+        position: fixed;
+        z-index: -100;
+        top: 0;
+          right: 0;
+          bottom: 0;
+          min-width: 100%;
+          min-height: 100%;
+          opacity: 0.1;
+          background-color: navy;
+          transform:scaleY(3);
+        }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 665px) {
+    .sMartLogo {
+        left: 10%;
+        max-width: 80%;
+    }
+    .landingLeftTitle {
+        font: 900 5vw Rubik, sans-serif !important;
+        top: 32%;
+        left: 2.5%;
+        transform: scale(0.8);
+    }
+    .landingRightTitle {
+        font: 900 6.2vw Rubik, sans-serif !important;
+        right: -65%;
+    }
+    .buttonPOS {
+        font: 900 2.7vw Rubik, sans-serif !important;
+        left: 35%;
+        top: 85%;
+    
+        }
+        .videoBody
+        {
+        position: fixed;
+        z-index: -100;
+        top: 0;
+          right: 0;
+          bottom: 0;
+          min-width: 100%;
+          min-height: 100%;
+          opacity: 0.1;
+          background-color: navy;
+          transform:scaleY(3);
+        }
+
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 715px) {
+    .sMartLogo {
+        left: 10%;
+        max-width: 80%;
+    }
+    .landingLeftTitle {
+        font: 900 5vw Rubik, sans-serif !important;
+        top: 32%;
+        left: 2.5%;
+        transform: scale(0.8);
+    }
+    .landingRightTitle {
+        font: 900 5.7vw Rubik, sans-serif !important;
+        right: -65%;
+    }
+    .buttonPOS {
+        font: 900 2.7vw Rubik, sans-serif !important;
+        left: 35%;
+        top: 85%;
+    
+        }
+        .videoBody
+        {
+        position: fixed;
+        z-index: -100;
+        top: 0;
+          right: 0;
+          bottom: 0;
+          min-width: 100%;
+          min-height: 100%;
+          opacity: 0.1;
+          background-color: navy;
+          transform:scaleY(3);
+        }
+
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 780px) {
+    .sMartLogo {
+        left: 10%;
+        max-width: 80%;
+    }
+    .landingLeftTitle {
+        font: 900 5vw Rubik, sans-serif !important;
+        top: 32%;
+        left: 2.5%;
+        transform: scale(0.8);
+    }
+    .landingRightTitle {
+        font: 900 5.2vw Rubik, sans-serif !important;
+        right: -65%;
+    }
+    .buttonPOS {
+        font: 900 2.7vw Rubik, sans-serif !important;
+        left: 35%;
+        top: 85%;
+    
+        }
+        .videoBody
+        {
+        position: fixed;
+        z-index: -100;
+        top: 0;
+          right: 0;
+          bottom: 0;
+          min-width: 100%;
+          min-height: 100%;
+          opacity: 0.1;
+          background-color: navy;
+          transform:scaleY(3);
+        }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 860px) {
+    .sMartLogo {
+        left: 10%;
+        max-width: 80%;
+    }
+    .landingLeftTitle {
+        font: 900 5vw Rubik, sans-serif !important;
+        top: 32%;
+        left: 2.5%;
+        transform: scale(0.8);
+    }
+    .landingRightTitle {
+        font: 900 4.7vw Rubik, sans-serif !important;
+        right: -65%;
+    }
+    .buttonPOS {
+        font: 900 2.2vw Rubik, sans-serif !important;
+        left: 35%;
+        top: 85%;
+    
+        }
+        .videoBody
+        {
+        position: fixed;
+        z-index: -100;
+        top: 0;
+          right: 0;
+          bottom: 0;
+          min-width: 100%;
+          min-height: 100%;
+          opacity: 0.1;
+          background-color: navy;
+          transform:scaleY(3);
+        }
+
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 780px) {
+    .sMartLogo {
+        left: 10%;
+        max-width: 80%;
+    }
+    .landingLeftTitle {
+        font: 900 5vw Rubik, sans-serif !important;
+        top: 32%;
+        left: 2.5%;
+        transform: scale(0.8);
+    }
+    .landingRightTitle {
+        font: 900 5.2vw Rubik, sans-serif !important;
+        right: -65%;
+    }
+    .buttonPOS {
+        font: 900 2.7vw Rubik, sans-serif !important;
+        left: 35%;
+        top: 85%;
+    
+        }
+        .videoBody
+        {
+        position: fixed;
+        z-index: -100;
+        top: 0;
+          right: 0;
+          bottom: 0;
+          min-width: 100%;
+          min-height: 100%;
+          opacity: 0.1;
+          background-color: navy;
+          transform:scaleY(3);
+        }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 870px) {
+    .sMartLogo {
+        left: 10%;
+        max-width: 80%;
+    }
+    .landingLeftTitle {
+        font: 900 5vw Rubik, sans-serif !important;
+        top: 32%;
+        left: 2.5%;
+        transform: scale(0.8);
+    }
+    .landingRightTitle {
+        font: 900 4.7vw Rubik, sans-serif !important;
+        right: -65%;
+    }
+    .buttonPOS {
+        font: 900 2.2vw Rubik, sans-serif !important;
+        left: 35%;
+        top: 85%;
+    
+        }
+        .videoBody
+        {
+        position: fixed;
+        z-index: -100;
+        top: 0;
+          right: 0;
+          bottom: 0;
+          min-width: 100%;
+          min-height: 100%;
+          opacity: 0.1;
+          background-color: navy;
+          transform:scaleY(3);
+        }
+
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 970px) {
+    .sMartLogo {
+        left: 10%;
+        max-width: 80%;
+    }
+    .landingLeftTitle {
+        font: 900 4.7vw Rubik, sans-serif !important;
+        top: 32%;
+        left: 2.5%;
+        transform: scale(0.8);
+    }
+    .landingRightTitle {
+        font: 900 4.2vw Rubik, sans-serif !important;
+        right: -65%;
+    }
+    .buttonPOS {
+        font: 900 2.5vw Rubik, sans-serif !important;
+        left: 38%;
+        top: 85%;
+    
+        }
+        .videoBody
+        {
+        position: fixed;
+        z-index: -100;
+        top: 0;
+          right: 0;
+          bottom: 0;
+          min-width: 100%;
+          min-height: 100%;
+          opacity: 0.1;
+          background-color: navy;
+          transform:scaleY(3);
+        }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 1170px) {
+    .sMartLogo {
+        left: 10%;
+        max-width: 80%;
+    }
+    .landingLeftTitle {
+        font: 900 4.7vw Rubik, sans-serif !important;
+        top: 38%;
+        left: 2.5%;
+        transform: scale(0.8);
+    }
+    .landingRightTitle {
+        font: 900 4vw Rubik, sans-serif !important;
+        right: -65%;
+    }
+    .buttonPOS {
+        font: 900 1.7vw Rubik, sans-serif !important;
+        left: 40%;
+        top: 85%;
+    
+        }
+        .videoBody
+        {
+        position: fixed;
+        z-index: -100;
+        top: 0;
+          right: 0;
+          bottom: 0;
+          min-width: 100%;
+          min-height: 100%;
+          opacity: 0.1;
+          background-color: navy;
+          transform:scaleY(3);
+        }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 1460px) {
+    .sMartLogo {
+        left: 10%;
+        max-width: 80%;
+    }
+    .landingLeftTitle {
+        font: 900 5vw Rubik, sans-serif !important;
+        top: 32%;
+        left: 2.5%;
+        transform: scale(0.8);
+    }
+    .landingRightTitle {
+        font: 900 3.2vw Rubik, sans-serif !important;
+        right: -65%;
+    }
+    .buttonPOS {
+        font: 900 1.2vw Rubik, sans-serif !important;
+        left: 42%;
+        top: 85%;
+    
+        }
+        .videoBody
+        {
+        position: fixed;
+        z-index: -100;
+        top: 0;
+          right: 0;
+          bottom: 0;
+          min-width: 100%;
+          min-height: 100%;
+          opacity: 0.1;
+          background-color: navy;
+          transform:scaleY(3);
+        }
+
+}

@@ -1,10 +1,12 @@
+body {
+  font: 400 15px Rubik, sans-serif !important;
+
+}
 
 .navbarColours {
     background-color: ghostwhite;
 }
-* {
-  font-family: 'Fira Sans', sans-serif;
-  }
+
   
   .searchboxContainer {
     position: relative;
@@ -21,8 +23,13 @@
 .shoppingCartIcon {
   position: absolute;
   z-index: 1000;
-  width: 100vw !important;
-  height: 100vh !important;
+  width: 100% !important;
+  height: 100% !important;
+
+}
+
+.shoppingCartIcon:hover {
+cursor: pointer;
 
 }
   
@@ -136,12 +143,11 @@
  }
 
 .shoppingCartIcon {
-  position: absolute;
-  transform: scale(0.09);
-  top: 0vh;
-
+  position: relative;
   filter: invert(31%) sepia(90%) saturate(6221%) hue-rotate(344deg) brightness(93%) contrast(90%) !important;
-
+max-width: 1.7vw;
+top: 1.3vh;
+margin-left: 0.7vw;
 
 }
  .navigationDropdownContainer {
@@ -151,11 +157,11 @@
  }
 
 .navigationDropdownBox {
+  display: block;
   position: absolute;
   /* top: 3vh; */
-  transform: translateX(-40%) !important;
-  top: 4vh;
-  
+  top: 3vh !important;
+z-index: 100 !important;  
 }
 .shoppingCartIconContainer{
   margin: 0%;
@@ -165,3 +171,82 @@
 .shoppingIconTitle {
   max-width: 10vw;
 }
+
+.yourAccountTitle {
+  position: absolute;
+  display: inline-grid;
+  text-align: center;
+  top: -50%;
+  right: 0.3vw;
+  font-size:0.7em !important;
+}
+
+.navbar-link {
+  transform: rotate(2%);
+}
+
+.profileArrow {
+  position: absolute !important;
+  top: 20vh !important;
+}
+
+.yourAccountButtons {
+  position: absolute;
+  z-index: 9999 !important;
+display: inline-flex;
+transform: scale(0.8);
+right: -4.5%;
+}
+
+.yourAccountTitleBurger {
+  position: relative;
+  font-size: 0.8em;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 430px) {
+  .yourAccountButtons {
+    position: absolute;
+    z-index: 9999 !important;
+  display: inline-flex;
+  transform: scale(0.8);
+  right: -4.5%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 500px) {
+  .yourAccountButtons {
+    position: absolute;
+    z-index: 9999 !important;
+  display: inline-flex;
+  transform: scale(0.8);
+  right: -3%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .yourAccountButtons {
+    position: absolute;
+    z-index: 9999 !important;
+  display: inline-flex;
+  transform: scale(0.8);
+  right: -3%;
+  }
+
+  .navburgerContainer
+  {
+    position: relative;
+right: k0vw;  
+}
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

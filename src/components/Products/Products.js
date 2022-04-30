@@ -3,7 +3,11 @@ import "bulma/css/bulma.css";
 import "materialize-css/dist/css/materialize.min.css";
 import "./Products.css";
 import { Helmet } from "react-helmet";
+import { Link } from "gatsby";
 import products from "../../pages/ProductsData.json";
+import slugify from "react-slugify";
+import breeze from "../../images/A Cotswold barley field blowing in the breeze.mp4";
+import { StaticImage } from "gatsby-plugin-image";
 <Helmet>
   <link
     rel="stylesheet"
@@ -20,6 +24,17 @@ import products from "../../pages/ProductsData.json";
     hidden
     data-autopop="true"
   ></div>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous"
+  ></link>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
 </Helmet>;
 
 function OnProductClick(e) {
@@ -63,57 +78,42 @@ function Products() {
     return eachProductStored[0].map((products, index) => {
       return (
         <div key={products.id} className="productContainer">
-          <div class="card">
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img
-                  src={products.image}
-                  alt="Image of the various products for sale!"
+          <div class="card cardContainer">
+            <img
+              class="card-img-top"
+              src={products.image}
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">{products.title}</h5>
+              <p class="card-text">£{products.price}</p>
+              <Link
+                to={`/products/${slugify(products.title)}`}
+                class="btn btn-primary linkContainer"
+              >
+                <StaticImage className="eyeImage"
+                  src="../../images/Eye.jpg"
+                  alt="See the unseen..."
                 />
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-content">
-                  <p class="title is-4">{products.title}</p>
-                </div>
-              </div>
-
-              <div class="content">
-                {products.description}
-                <a href="#">#css</a> <a href="#">#responsive</a>
-                <br />
-              </div>
-              <div>
-                <button
-                  class="snipcart-add-item"
-                  data-item-id={products.id}
-                  data-item-name={products.title}
-                  data-item-image={products.image}
-                  data-item-price={products.price}
-                  data-item-url="https://smartremasteredmaster.gatsbyjs.io/"
-                  data-item-description={products.description}
-                >
-                  Add to shopping cart
-                </button>
-              </div>
+                View product
+              </Link>
             </div>
           </div>
-          <div>
-            {/* {clickedIndex[index] ? (
-              <ProductListingCard props={products} />
-            ) : null} */}
-          </div>
-          {/* <a href="#" class="snipcart-checkout">
-            Click here to checkout
-          </a> */}
         </div>
       );
     });
   }
 
   return (
-    <RenderProducts />
+    <div>
+      <div className="productsContainerBody">
+        <video className="videoBody" preload="auto" loop autoPlay muted>
+          <source src={breeze} type="video/mp4" />
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+      <RenderProducts />
+    </div>
     // {/* {isLoading ? <ProductPreloader /> : null} */}
   );
 }

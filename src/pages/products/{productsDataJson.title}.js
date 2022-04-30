@@ -1,6 +1,6 @@
 import * as React from "react";
 import { graphql } from "gatsby";
-import "bulma/css/bulma.css";
+import { Link } from "gatsby";
 import Navigation from "../../components/Navigation/Navigation";
 import "./productRoutedPages.css";
 import Footer from "../../components/Footer/Footer";
@@ -31,29 +31,36 @@ const ProductsPost = ({ data }) => {
       <Navigation />
       <div class="columns">
         <div class="column col1_container">
-          First column
           <img
             className="productImage"
             src={data.productsDataJson.image}
             alt="All product images are listed here, from bags to SSDs - we have it all!"
           />
         </div>
-        <div class="column">
-          <nav class="breadcrumb" aria-label="breadcrumbs">
+        <div className="column">
+          <nav
+            className="breadcrumb breadcrumbContainer "
+            aria-label="breadcrumbs"
+          >
             <ul>
               <li>
-                <a href="#">Bulma</a>
+                <Link className="breadcrumbLinks" to="/">
+                  Home
+                </Link>
               </li>
               <li>
-                <a href="#">Documentation</a>
-              </li>
-              <li>
-                <a href="#">Components</a>
+                <Link className="breadcrumbLinks" to="/products">
+                  Products
+                </Link>
               </li>
               <li class="is-active">
-                <a href="#" aria-current="page">
-                  Breadcrumb
-                </a>
+                <Link
+                  className="breadcrumbLinkActive"
+                  href="#"
+                  aria-current="page"
+                >
+                  Current
+                </Link>
               </li>
             </ul>
           </nav>
@@ -89,7 +96,7 @@ const ProductsPost = ({ data }) => {
             <div>
               <div>
                 <button
-                  class="snipcart-add-item button is-primary"
+                  class="snipcart-add-item button is-primary productShoppingCartButton"
                   data-item-id={data.productsDataJson.id}
                   data-item-name={data.productsDataJson.title}
                   data-item-image={data.productsDataJson.image}
@@ -104,10 +111,10 @@ const ProductsPost = ({ data }) => {
           </div>
         </div>
       </div>
-      <p className="mybliggggg">
-        My blog post contents will go here (eventually).
-      </p>
-      <GiscusMain />
+
+      <div className="giscusContainer">
+        <GiscusMain />
+      </div>
 
       <Footer />
     </div>

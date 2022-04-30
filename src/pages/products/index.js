@@ -5,7 +5,7 @@ import HeroCarousel from "../../components/HeroCarousel/HeroCarousel";
 import Navigation from "../../components/Navigation/Navigation";
 import Products from "../../components/Products/Products";
 import Search from "../../components/Searchbox/Searchbox";
-import { body } from "../index.module.css";
+import "../index.css";
 import Amplify, { Auth } from "aws-amplify";
 import awsconfig from "../../aws-exports";
 Amplify.configure(awsconfig);
@@ -20,10 +20,11 @@ const searchIndices = [{ name: `Pages`, title: `Pages` }];
 // markup
 const IndexPage = () => {
   return (
-    <div className={body}>
+    <div className="body">
       <Navigation />
       <Search indices={searchIndices} />
       <HeroCarousel />
+      <h2 className="browseProductTitle">Browse all products</h2>
       <Products />
       <Footer />
     </div>
