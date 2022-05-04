@@ -17,43 +17,41 @@ import {
 
 const Footer = () => {
   return (
-    <div>
+    <footer class="footer">
       <div className={paymentBannerContainer}>
-        <Visa style={{ margin: 10, width: 50 }} />
-        <Mastercard style={{ margin: 10, width: 50 }} />
-        <Paypal style={{ margin: 10, width: 50 }} />
-        <Amex style={{ margin: 10, width: 50 }} />
-        <Applepay style={{ margin: 10, width: 50 }} />
-        <Amazon style={{ margin: 10, width: 50 }} />
-        <Klarna style={{ margin: 10, width: 50 }} />
-        <Clearpay style={{ margin: 10, width: 50 }} />
+        <Visa style={{ margin: 10, width: 40 }} />
+        <Mastercard style={{ margin: 10, width: 40 }} />
+        <Paypal style={{ margin: 10, width: 40 }} />
+        <Amex style={{ margin: 10, width: 40 }} />
+        <Applepay style={{ margin: 10, width: 40 }} />
+        <Amazon style={{ margin: 10, width: 40 }} />
+        <Klarna style={{ margin: 10, width: 40 }} />
+        <Clearpay style={{ margin: 10, width: 40 }} />
       </div>
-      <footer class="footer">
-        <div class={`content has-text-centered ${footerAuthorContainer}`}>
-          <p>
-            <strong>S-Mart</strong>
-            <br />
-            <p class="footer-heart">
-              Made with{" "}
-              <g-emoji
-                class="g-emoji"
-                alias="heart"
-                fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png"
-              >
-                <img
-                  class="emoji"
-                  alt="heart"
-                  height="20"
-                  width="20"
-                  src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png"
-                />
-              </g-emoji>{" "}
-              by <a href="https://armin.id">Arman Shazad</a>
-            </p>
+      <div class={`content has-text-centered ${footerAuthorContainer}`}>
+        <p>
+          <strong>S-Mart</strong>
+          <br />
+          <p class="footer-heart">
+            Made with{" "}
+            <g-emoji
+              class="g-emoji"
+              alias="heart"
+              fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png"
+            >
+              <img
+                class="emoji"
+                alt="heart"
+                height="20"
+                width="20"
+                src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png"
+              />
+            </g-emoji>{" "}
+            by <a href="https://armin.id">Arman Shazad</a>
           </p>
-        </div>
-      </footer>
-    </div>
+        </p>
+      </div>
+    </footer>
   );
 };
 

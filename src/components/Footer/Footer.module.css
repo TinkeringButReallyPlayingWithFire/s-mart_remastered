@@ -1,12 +1,22 @@
 .paymentBannerContainer {
-    position: absolute;
+    position: relative;
     display: inline-flex;
     flex-direction: row;
-    left: 37%;
+    margin: auto;
+    padding: auto;
     border-bottom: 1px solid crimson;
+    left: 38%;
 }
 
 .footerAuthorContainer {
     position: relative;
     top: 5vh !important;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 1225px) {
+    .paymentBannerContainer {
+display: none !important;
+        
+    }
 }
