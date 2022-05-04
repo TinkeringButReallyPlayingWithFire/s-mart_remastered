@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "gatsby";
 import products from "../../pages/ProductsData.json";
 import slugify from "react-slugify";
-import breeze from "../../images/A Cotswold barley field blowing in the breeze.mp4";
+import breeze from "../../images/breeze.mp4";
 import { StaticImage } from "gatsby-plugin-image";
 <Helmet>
   <link
@@ -88,11 +88,6 @@ function Products() {
                 to={`/products/${slugify(products.title)}`}
                 class="btn btn-primary linkContainer"
               >
-                <StaticImage
-                  className="eyeImage"
-                  src="../../images/Eye.jpg"
-                  alt="See the unseen..."
-                />
                 View product
               </Link>
             </div>
@@ -103,7 +98,7 @@ function Products() {
   }
 
   return (
-    <div>
+    <div className="videoContainer">
       <div className="productsContainerBody">
         <video className="videoBody" preload="auto" loop autoPlay muted>
           <source src={breeze} type="video/mp4" />

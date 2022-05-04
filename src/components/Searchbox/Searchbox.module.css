@@ -3,3 +3,7 @@
     position: absolute;
     z-index: 1000;
 }
+
+.searchPlaceholderText {
+    color: crimson !important;
+}

@@ -1,17 +1,18 @@
 import * as React from "react";
 import { useState, useEffect } from "react";
 import "bulma/css/bulma.css";
+import Search from "../../components/Searchbox/Searchbox";
 import {
-  container,
   navbarColours,
   profileIconSVG,
   navigationDropdownContainer,
-  navigationDropdownBox,
   shoppingCartIcon,
   yourAccountTitle,
   yourAccountButtons,
   yourAccountTitleBurger,
   navburgerContainer,
+  searchboxContainer,
+  notSignedInText,
 } from "./Navigation.module.css";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
@@ -75,6 +76,8 @@ const Navigation = (props) => {
       });
   }
 
+  const searchIndices = [{ name: `Pages`, title: `Pages` }];
+
   return (
     <div>
       <nav
@@ -116,7 +119,7 @@ const Navigation = (props) => {
                   <Link to="/" className="navbar-item button is-primary">
                     Home
                   </Link>
-                  <Link to="/" className="navbar-item button is-primary">
+                  <Link to="/Signin" className="navbar-item button is-primary">
                     Profile
                   </Link>
                 </div>
@@ -157,6 +160,10 @@ const Navigation = (props) => {
             </div>
           </div>
 
+          <div className={searchboxContainer}>
+            <Search indices={searchIndices} />
+          </div>
+
           <div>
             <div className="buttons">
               {/* USER CHECKING */}
@@ -192,6 +199,13 @@ const Navigation = (props) => {
                         <Link to="/Signin" className="button is-primary">
                           Profile
                         </Link>
+                      </div>
+                    ) : null}
+                    {isLoggedIn == false && isHovered ? (
+                      <div>
+                        <p className={notSignedInText}>
+                          You are not currently signed in!
+                        </p>
                       </div>
                     ) : null}
                   </div>

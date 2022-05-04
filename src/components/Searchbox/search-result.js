@@ -34,7 +34,7 @@ const HitCount = connectStateResults(({ searchResults }) => {
 });
 const PageHit = ({ hit }) => (
   <div>
-    <Link to={`${slugify(hit.title)}`}>
+    <Link to={`/products/${slugify(hit.title)}`}>
       <div>
         <img src={hit.image} attribute="image" hit={hit} tagName="mark" />
         <Highlight attribute="title" hit={hit} tagName="mark" />

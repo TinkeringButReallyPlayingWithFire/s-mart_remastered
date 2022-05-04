@@ -1,3 +1,12 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.paymentBannerContainer {
+    position: absolute;
+    display: inline-flex;
+    flex-direction: row;
+    left: 37%;
+    border-bottom: 1px solid crimson;
+}
+
+.footerAuthorContainer {
+    position: relative;
+    top: 5vh !important;
+}

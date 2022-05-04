@@ -10,10 +10,10 @@ body {
   
   .searchboxContainer {
     position: relative;
-    max-width: 60vw;
-    margin-left: 20vw;
-    top: 0.8vh;
-  }
+    min-width: 55%;
+transform: translateX(-30%); 
+z-index: 999 !important;
+ }
   
   .material-icons {
     color: crimson !important;
@@ -93,6 +93,13 @@ cursor: pointer;
     top: -2.5vh;
   }
   
+.notSignedInText {
+  position: relative;
+  display: flex;
+  font-size: 0.8rem;
+  max-width: 5vw;
+}
+
   .shoppingCardText {
     position: relative;
     top: 4vh;

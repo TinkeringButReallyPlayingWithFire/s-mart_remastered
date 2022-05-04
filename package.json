@@ -46,6 +46,7 @@
     "react-helmet": "^6.1.0",
     "react-instantsearch-dom": "^6.23.3",
     "react-instantsearch-hooks": "^6.23.3",
+    "react-pay-icons": "^2.0.1",
     "react-slick": "^0.29.0",
     "react-slugify": "^2.1.0",
     "slick-carousel": "^1.8.1",

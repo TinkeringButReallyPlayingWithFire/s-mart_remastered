@@ -6,7 +6,7 @@ const Popover = css`
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
   position: absolute;
-  z-index: 2;
+  z-index: 100 !important;
   right: 0;
   top: 100%;
   margin-top: 0.5em;

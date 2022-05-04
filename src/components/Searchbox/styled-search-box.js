@@ -30,6 +30,7 @@ export default styled(SearchBox)`
     font-size: 1em;
     transition: 100ms;
     border-radius: 2px;
+    width: 100%;
 
     color: ${({ theme }) => theme.foreground};
     ::placeholder {

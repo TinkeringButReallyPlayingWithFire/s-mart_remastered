@@ -20,6 +20,7 @@ import Navigation from "../components/Navigation/Navigation";
 import Navigation_LoggedIn from "../components/Navigation/Navigation_LoggedIn";
 import Footer from "../components/Footer/Footer";
 import { Helmet } from "react-helmet";
+import { Link } from "gatsby";
 import bubbles from "../images/Bubbles.mp4";
 
 Amplify.configure(awsmobile);

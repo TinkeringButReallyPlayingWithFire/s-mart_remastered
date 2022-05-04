@@ -1,5 +1,4 @@
 
-
 /* .productContainer {
   display: inline-flex;
   width: 20vw;
@@ -42,15 +41,13 @@ padding: 3%;
 }
 
 .productsContainerBody {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 2.5%;
- top: 143%;
-  z-index: -100;
-  width: 95%;
-  height: 385vh;
+  overflow: hidden;
 
+}
+
+
+.videoContainer {
+overflow: hidden;
 }
 
 .linkContainer {

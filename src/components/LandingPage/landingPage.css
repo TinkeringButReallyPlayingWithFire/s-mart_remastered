@@ -55,7 +55,7 @@ top: 0;
 position: absolute;
 font: 900 1vw Rubik, sans-serif !important;
 
-left: 45%;
+left: 44% !important;
 top: 80%;
 }
 
@@ -129,7 +129,7 @@ top: 0;
 }
 .buttonPOS {
     font: 900 3.5vw Rubik, sans-serif !important;
-    left: 30%;
+    left: 31% !important;
     top: 85%;
 
     }
@@ -166,7 +166,7 @@ top: 0;
 }
 .buttonPOS {
     font: 900 3.5vw Rubik, sans-serif !important;
-    left: 30%;
+    left: 30% !important;
     top: 85%;
 
     }
@@ -207,7 +207,7 @@ top: 0;
 }
 .buttonPOS {
     font: 900 3.2vw Rubik, sans-serif !important;
-    left: 30%;
+    left: 30% !important;
     top: 85%;
 
     }
@@ -245,7 +245,7 @@ top: 0;
 }
 .buttonPOS {
     font: 900 3.2vw Rubik, sans-serif !important;
-    left: 30%;
+    left: 30% !important;
     top: 85%;
 
     }
@@ -285,7 +285,7 @@ top: 0;
 }
 .buttonPOS {
     font: 900 3.7vw Rubik, sans-serif !important;
-    left: 30%;
+    left: 30% !important;
     top: 85%;
 
     }
@@ -324,7 +324,7 @@ top: 0;
     }
     .buttonPOS {
         font: 900 2.7vw Rubik, sans-serif !important;
-        left: 35%;
+        left: 36% !important;
         top: 85%;
     
         }
@@ -401,7 +401,7 @@ top: 0;
     }
     .buttonPOS {
         font: 900 2.7vw Rubik, sans-serif !important;
-        left: 35%;
+        left: 38% !important;
         top: 85%;
     
         }
@@ -440,7 +440,7 @@ top: 0;
     }
     .buttonPOS {
         font: 900 2.7vw Rubik, sans-serif !important;
-        left: 35%;
+        left: 40% !important;
         top: 85%;
     
         }
@@ -592,7 +592,7 @@ top: 0;
     }
     .buttonPOS {
         font: 900 2.5vw Rubik, sans-serif !important;
-        left: 38%;
+        left: 38% !important;
         top: 85%;
     
         }
@@ -630,7 +630,7 @@ top: 0;
     }
     .buttonPOS {
         font: 900 1.7vw Rubik, sans-serif !important;
-        left: 40%;
+        left: 41.5% !important;
         top: 85%;
     
         }
@@ -668,7 +668,7 @@ top: 0;
     }
     .buttonPOS {
         font: 900 1.2vw Rubik, sans-serif !important;
-        left: 42%;
+        left: 44% !important;
         top: 85%;
     
         }
