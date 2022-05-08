@@ -98,6 +98,10 @@ cursor: pointer;
   display: flex;
   font-size: 0.8rem;
   max-width: 5vw;
+  color: crimson !important;
+  animation-name: FadeIn;
+  animation-duration: 3s;
+  transition-timing-function: linear;
 }
 
   .shoppingCardText {

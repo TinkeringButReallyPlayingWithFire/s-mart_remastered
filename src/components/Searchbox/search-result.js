@@ -38,9 +38,7 @@ const PageHit = ({ hit }) => (
       <div>
         <img src={hit.image} attribute="image" hit={hit} tagName="mark" />
         <Highlight attribute="title" hit={hit} tagName="mark" />
-        <li attribute="image" hit={hit}>
-          <p className="ratingText">({hit.rating.rate} Rating)</p>
-        </li>
+        <li attribute="image" hit={hit}></li>
       </div>
     </Link>
   </div>
