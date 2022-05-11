@@ -3,7 +3,6 @@ import { useState } from "react";
 
 import "materialize-css/dist/css/materialize.min.css";
 import "./Products.css";
-import NavbarShoppingCard from "../Navigation/NavbarShoppingCard";
 
 function AddToShoppingBagButton(props) {
   const [productCount, setproductCount] = useState([]);
@@ -43,8 +42,6 @@ function AddToShoppingBagButton(props) {
             shopping bag
           </a>
 
-          {/* PRODUCT PROPS OF EACH INDISIVUAL PRODUCT THAT IS CURRENTLY ACTIVE N THE CARD IS DISPLAYED FOR, U NEED TO NOW USE THIS DATA TO SHOVE ONTO THE SHOPPING LIST NAVBAR FCARD AND SAVE THE PREVIOUS STATE OR WHATEVER N MAKE SUER THE ICON CHANGES WITH A +1 +2 OR HOWEVER MANY ITEMS IN BAG, DEN U CAN HOVER OVER NAVBAR SHOPPING ICON AND SHOW HOW MUCH SHIT U GOT WITH TIUTLE QUANTIY PRICE IMAGE ERTC */}
-          {/* {clickedIndex[index] ? <ShoppingBagView props={props} /> : null} */}
         </div>
       );
     });

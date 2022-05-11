@@ -86,7 +86,6 @@ left: 38.5vw;
 
 
 
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 600px) {
     .profileInformationContainer {
         position: absolute;
@@ -199,7 +198,6 @@ left: 38.5vw;
 }
 
 
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 599px) {
         .profileInformationContainer {
             position: absolute;
@@ -231,7 +229,6 @@ left: 38.5vw;
     }
     
 
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 375px) {
     .profileInformationContainer {
         position: absolute;

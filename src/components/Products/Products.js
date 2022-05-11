@@ -7,7 +7,6 @@ import { Link } from "gatsby";
 import products from "../../pages/ProductsData.json";
 import slugify from "react-slugify";
 import breeze from "../../images/breeze.mp4";
-import { StaticImage } from "gatsby-plugin-image";
 <Helmet>
   <link
     rel="stylesheet"

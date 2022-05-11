@@ -1,6 +1,5 @@
 import * as React from "react";
 import {
-  footer_heart,
   paymentBannerContainer,
   footerAuthorContainer,
 } from "./Footer.module.css";

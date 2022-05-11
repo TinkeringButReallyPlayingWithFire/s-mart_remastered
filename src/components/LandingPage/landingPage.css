@@ -60,10 +60,6 @@ top: 80%;
 }
 
 
-/* Beginning media queries */
-/* Beginning media queries */
-/* Beginning media queries */
-/* Beginning media queries */
 @media only screen and (max-width: 295px) {
     .leftSideContainer {
         position: absolute;
@@ -265,7 +261,6 @@ top: 0;
 }
 
 
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .sMartLogo {
         left: 10%;
@@ -306,7 +301,6 @@ top: 0;
 
 
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .sMartLogo {
         left: 10%;
@@ -344,7 +338,6 @@ top: 0;
 
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 665px) {
     .sMartLogo {
         left: 10%;
@@ -383,7 +376,6 @@ top: 0;
 }
 
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 715px) {
     .sMartLogo {
         left: 10%;
@@ -422,7 +414,6 @@ top: 0;
 }
 
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 780px) {
     .sMartLogo {
         left: 10%;
@@ -460,7 +451,6 @@ top: 0;
 
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 860px) {
     .sMartLogo {
         left: 10%;
@@ -499,7 +489,6 @@ top: 0;
 }
 
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 780px) {
     .sMartLogo {
         left: 10%;
@@ -537,7 +526,6 @@ top: 0;
 
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 870px) {
     .sMartLogo {
         left: 10%;
@@ -574,7 +562,6 @@ top: 0;
         }
 
 }
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 970px) {
     .sMartLogo {
         left: 10%;
@@ -612,7 +599,6 @@ top: 0;
 
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 1170px) {
     .sMartLogo {
         left: 10%;
@@ -650,7 +636,6 @@ top: 0;
 
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 1460px) {
     .sMartLogo {
         left: 10%;

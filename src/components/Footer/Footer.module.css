@@ -13,7 +13,6 @@
     top: 5vh !important;
 }
 
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 1225px) {
     .paymentBannerContainer {
 display: none !important;

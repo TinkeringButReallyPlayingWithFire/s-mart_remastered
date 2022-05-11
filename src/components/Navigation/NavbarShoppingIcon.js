@@ -2,7 +2,6 @@ import * as React from "react";
 import { useState } from "react";
 
 import "materialize-css/dist/css/materialize.min.css";
-import NavbarShoppingOverviewCard from "./NavbarShoppingOverviewCard";
 
 function OnProfileClick(e) {
   e.preventDefault();

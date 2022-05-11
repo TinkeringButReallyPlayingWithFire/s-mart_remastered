@@ -18,7 +18,6 @@ import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 import { Auth } from "aws-amplify";
 import { Helmet } from "react-helmet";
-import { SignOut } from "aws-amplify-react";
 <Helmet>
   <link
     href="https://fonts.googleapis.com/icon?family=Material+Icons"

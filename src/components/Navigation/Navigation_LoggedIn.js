@@ -1,10 +1,8 @@
 import * as React from "react";
-import { useState } from "react";
 import "bulma/css/bulma.css";
-import { container, navbarColours } from "./Navigation.module.css";
+import { navbarColours } from "./Navigation.module.css";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
-import { Auth } from "aws-amplify";
 import { Helmet } from "react-helmet";
 
 <Helmet>
@@ -69,13 +67,7 @@ const Navigation_LoggedIn = (props) => {
               </div>
 
               <div className="buttons">
-                {/* {Auth.currentAuthenticatedUser ? (
-                    <p>
-                      <strong>
-                        Welcome back {Auth.currentUserInfo.username}
-                      </strong>
-                    </p>
-                  ) : ( */}
+
                 <Link to="/" className="button is-primary">
                   <strong>Home</strong>
                 </Link>

@@ -1,8 +1,7 @@
 import * as React from "react";
 
 import "materialize-css/dist/css/materialize.min.css";
-import AddToShoppingBagButton from "./AddToShoppingBagButton";
-import ProductListingCardQuantitySelector from "./ProductListingCardQuantitySelector";
+
 
 function ProductListingCard(props) {
   // function OnProductClick(e) {

@@ -1,15 +1,5 @@
 
-/* .productContainer {
-  display: inline-flex;
-  width: 20vw;
-  height: 20vh;
-  position: relative;
-background-color: ghostwhite;
-margin: 4%;
-max-width: 20%;
-align-items: stretch;
 
-} */
 
 .productContainer {
   display: inline-flex !important;
@@ -69,7 +59,6 @@ overflow: hidden;
 
 
 
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 250px) {
   .productContainer {
     display: flex !important;
@@ -91,7 +80,6 @@ overflow: hidden;
 
 
 
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 350px) {
   .productContainer {
     display: flex !important;
@@ -111,7 +99,6 @@ overflow: hidden;
 }
 
 
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .productContainer {
     display: flex !important;
@@ -125,7 +112,6 @@ overflow: hidden;
 }
 
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
   body {
@@ -154,13 +140,10 @@ overflow: hidden;
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {}
 
-/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {}
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .productContainer {
     display: inline-block;
@@ -176,7 +159,7 @@ overflow: hidden;
   }
   .cardContainer {
     display: inline-block;
-    vertical-align: top; /*vertical alignment*/;
+    vertical-align: top; 
     margin: 4vh;
     z-index: 100;
   padding: 3%;
@@ -184,7 +167,6 @@ overflow: hidden;
   }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1340px) {
   .productContainer {
     display: inline-block;
@@ -200,7 +182,7 @@ overflow: hidden;
   }
   .cardContainer {
     display: inline-block;
-    vertical-align: top; /*vertical alignment*/;
+    vertical-align: top; 
     margin: 6vh;
     z-index: 100;
   padding: 3%;
@@ -208,7 +190,6 @@ overflow: hidden;
   }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1414px) {
   .productContainer {
     display: inline-block;
@@ -224,7 +205,7 @@ overflow: hidden;
   }
   .cardContainer {
     display: inline-block;
-    vertical-align: top; /*vertical alignment*/;
+    vertical-align: top;
     margin: 7vh;
     z-index: 100;
   padding: 3%;
@@ -232,7 +213,6 @@ overflow: hidden;
   }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1500) {
   .productContainer {
     display: inline-block;
